@@ -1,0 +1,503 @@
+main {
+    width: 100%;
+    height: auto;
+    padding: 120px 0 50px 0;
+
+    // swiper
+    .swiper-banner {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    width: 100%;
+                    height: 484px;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 15%;
+            height: 100%;
+            top: 0;
+            margin: 0;
+            opacity: 0.3;
+
+            &:hover,
+            &:active,
+            &.active {
+                opacity: 1;
+            }
+
+            &::before {
+                content: "";
+            }
+
+            &::after {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-style: solid;
+                border-width: 8px 8px 0 0;
+                border-color: $main_3 $main_3 transparent transparent;
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+                transform: rotate(45deg);
+            }
+        }
+
+        .swiper-button-prev {
+            left: 0;
+            right: unset;
+            transform: scaleX(-1);
+        }
+
+        .swiper-button-next {
+            left: unset;
+            right: 0;
+        }
+
+        .swiper-pagination {
+            bottom: 30px;
+            left: 5px;
+
+            span {
+                width: 28px;
+                height: 24px;
+                background: $main_3;
+                clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+                transform: rotate(30deg);
+                border-radius: 0;
+                opacity: 1;
+
+                &:hover,
+                &:active,
+                &.swiper-pagination-bullet-active {
+                    background: $third_1 ;
+                }
+            }
+        }
+    }
+
+    // marquee
+    .marqueeArea {
+        width: 1300px;
+        height: 40px;
+        background: $main_3;
+        display: flex;
+        align-items: center;
+        margin: 25px auto 65px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 40px;
+            background: $main_3;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            position: absolute;
+            top: 0;
+            right: -14px;
+            z-index: -1;
+        }
+
+        .marqueeBlock {
+            width: 52px;
+            height: 41px;
+            background: $third_2;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+
+        .marqueeBroadcast {
+            width: 50px;
+            height: 41px;
+            background: $main_3;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: -12px;
+            z-index: 9;
+            cursor: pointer;
+
+            i {
+                width: 25px;
+                height: 20px;
+            }
+        }
+
+        .marqueeTextBox {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            p {
+                font-size: 17px;
+                color: $second_2;
+                font-weight: bold;
+                display: inline-block;
+                white-space: nowrap;
+                padding-left: 100%;
+                animation: marqueeMove 15s linear 0s infinite;
+            }
+
+            @keyframes marqueeMove {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+
+    // gruid
+    .gruidArea {
+        width: 1300px;
+        height: auto;
+        margin: 0 auto;
+
+        ul {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 0px;
+
+            li {
+                width: 300px;
+                min-height: 345px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &:nth-child(even) {
+                    justify-content: flex-end;
+                }
+
+                .gameSelect {
+                    width: 100%;
+                    height: 218px;
+                    position: relative;
+
+                    .trigger {
+                        width: 300px;
+                        height: 300px;
+                        margin: 0 auto;
+                        cursor: pointer;
+
+                        img {
+                            width: auto;
+                            height: auto;
+                            object-fit: contain;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        P {
+                            font-size: 35px;
+                            color: $third_5;
+                            position: absolute;
+                            top: 86px;
+                            left: 15px;
+                        }
+
+                        &:hover,
+                        &:active,
+                        &.active {
+                            &.live_aa {
+                                img {
+                                    animation: live_aa_move 0.5s linear;
+
+                                    @keyframes live_aa_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: translateX(-20%) translateY(0);
+                                        }
+
+                                        50% {
+                                            opacity: 0.5;
+                                        }
+
+                                        100% {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.live_bb {
+                                img {
+                                    animation: live_bb_move 1s linear 0s;
+
+                                    @keyframes live_bb_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: translateY(-15%) translateX(10%);
+                                        }
+
+                                        25% {
+                                            opacity: 0.3;
+                                            transform: translateY(-10%) translateX(-5%);
+                                        }
+
+                                        50% {
+                                            opacity: 0.6;
+                                            transform: translateY(-5%) translateX(10%);
+                                        }
+
+                                        75% {
+                                            transform: translateY(0%) translateX(-5%);
+                                        }
+
+                                        100% {
+                                            opacity: 1;
+                                            transform: translateY(0%) translateX(0%);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.slot_bbb {
+                                img {
+                                    animation: slot_bbb_move 1s linear 0s;
+
+                                    @keyframes slot_bbb_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: rotate(180deg);
+                                        }
+
+                                        50% {
+                                            opacity: 0.5;
+                                        }
+
+                                        100% {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.slot_ccc {
+                                img {
+                                    animation: slot_ccc_move 1s linear 0s;
+
+                                    @keyframes slot_ccc_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: scaleX(1.1);
+                                        }
+
+                                        33% {
+                                            opacity: 0.2;
+                                            transform: scaleY(1.1);
+                                        }
+
+                                        66% {
+                                            opacity: 0.6;
+                                            transform: scale(1.3);
+                                        }
+
+                                        99% {
+                                            opacity: 1;
+                                            transform: scale(1);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.board_abc {
+                                img {
+                                    animation: board_abc_move 1s linear 0s;
+
+                                    @keyframes board_abc_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: rotate(0deg);
+                                        }
+
+                                        100% {
+                                            opacity: 1;
+                                            transform: rotate(-360deg) scale(1);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.lottery_abc {
+                                img {
+                                    animation: lottery_abc_move 1s linear 0s;
+
+                                    @keyframes lottery_abc_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: scaleX(0.8);
+                                        }
+
+                                        33% {
+                                            opacity: 0.2;
+                                            transform: scaleY(0.8);
+                                        }
+
+                                        66% {
+                                            opacity: 0.6;
+                                            transform: scale(0.8);
+                                        }
+
+                                        99% {
+                                            opacity: 1;
+                                            transform: scale(1);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.sport_abc {
+                                img {
+                                    animation: sport_abc_move 1s linear 0s;
+
+                                    @keyframes sport_abc_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: rotate(-45deg);
+                                        }
+
+                                        25% {
+                                            transform: translateY(-10%);
+                                        }
+
+                                        50% {
+                                            transform: rotate(10deg);
+                                        }
+
+                                        75% {
+                                            transform: translateY(-5%);
+                                        }
+
+                                        100% {
+                                            transform: translate(0);
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.fish_tt {
+                                img {
+                                    animation: fish_tt_move 1s ease-in-out 0s;
+
+                                    @keyframes fish_tt_move {
+                                        0% {
+                                            opacity: 0;
+                                            transform: translateX(20%) translateY(0);
+                                        }
+
+                                        50% {
+                                            opacity: 0.5;
+                                        }
+
+                                        100% {
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &.live_aa {
+                            img {
+                                width: 195px;
+                                height: 258px;
+                                opacity: 1;
+                                top: -58px;
+                                left: 50px;
+                            }
+                        }
+
+                        &.live_bb {
+                            img {
+                                width: 217px;
+                                height: 287px;
+                                top: -86px;
+                                left: 14px;
+                            }
+                        }
+
+                        &.slot_bbb {
+                            img {
+                                width: 248px;
+                                height: 231px;
+                                top: -30px;
+                                left: 54px;
+                            }
+                        }
+
+                        &.slot_ccc {
+                            img {
+                                width: 318px;
+                                height: 270px;
+                                top: -44px;
+                                left: 46px;
+                            }
+                        }
+
+                        &.board_abc {
+                            img {
+                                width: 324px;
+                                height: 290px;
+                                top: -63px;
+                                left: -36px;
+                            }
+                        }
+
+                        &.lottery_abc {
+                            img {
+                                width: 286px;
+                                height: 224px;
+                                top: -28px;
+                                left: 6px;
+                            }
+                        }
+
+                        &.sport_abc {
+                            img {
+                                width: 350px;
+                                height: 350px;
+                                top: -109px;
+                                left: -5px;
+                            }
+                        }
+
+                        &.fish_tt {
+                            img {
+                                width: 308px;
+                                height: 236px;
+                                top: -33px;
+                                left: 41px;
+                            }
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: $third_4;
+                }
+            }
+        }
+    }
+
+    @import "./aside";
+}

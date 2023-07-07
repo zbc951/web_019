@@ -1,0 +1,118 @@
+html body .bg {
+    background: url("../img/bg_img_3.png") no-repeat top;
+    background-size: cover
+}
+
+html header .topArea {
+    background: url("../img/header_bg_1.png") no-repeat top left;
+    background-size: cover;
+}
+
+html header .midArea {
+    background: url("../img/header_bg_2.png") no-repeat top left;
+    background-size: cover;
+}
+
+// 廣播ic
+html body main .marqueeArea .marqueeBroadcast i {
+    background: url("../img/marquee_broadcast.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main .gruidArea ul li .gameSelect {
+    background: url("../img/hexagon.png") no-repeat center;
+    background-size: contain;
+}
+
+// footer
+html body footer .upperHalf {
+    background: url("../img/footer_bg.png") no-repeat top left;
+    background-size: cover;
+}
+
+html body footer .lowerHalf {
+    background: url("../img/footer_bg_2.png") no-repeat top left;
+    background-size: cover;
+}
+
+// decorate
+html body .money_ic_1 {
+    background: url("../img/anima_money_1.png") no-repeat center;
+    background-size: contain;
+}
+
+html body .money_ic_2 {
+    background: url("../img/anima_money_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body .money_ic_3 {
+    background: url("../img/anima_money_3.png") no-repeat center;
+    background-size: contain;
+}
+
+html body .money_ic_4 {
+    background: url("../img/anima_money_4.png") no-repeat center;
+    background-size: contain;
+}
+
+html body .decorate_ic_1 {
+    background: url("../img/background_decorate_1.png") no-repeat center;
+    background-size: contain;
+}
+
+// aside
+html body main aside.downloadBtn i {
+    background: url("../img/download_btn.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.toTop {
+    background: url("../img/hexagon_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.toTop i {
+    background: url("../img/aside_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.decorateLeft {
+    background: url("../img/aside_1.png") no-repeat left top;
+    background-size: contain;
+}
+
+html body main aside.serviceTwoFour {
+    background: url("../img/hexagon_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceTwoFour i {
+    background: url("../img/service_24.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceLine {
+    background: url("../img/hexagon_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceLine i {
+    background: url("../img/service_LINE.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceWeChat {
+    background: url("../img/hexagon_2.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceWeChat i {
+    background: url("../img/service_weChat.png") no-repeat center;
+    background-size: contain;
+}
+
+html body main aside.serviceNone {
+    background: url("../img/hexagon_3.png") no-repeat right;
+    background-size: contain;
+}

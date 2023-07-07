@@ -1,0 +1,87 @@
+// 主色
+$main_1: linear-gradient(to left, #41004d 0%, #5c006a 45%, #730072 100%);
+$main_2: #730072;
+$main_3: #ffffff;
+// 副色
+$second_1: #f7d6a5;
+$second_2: #310054;
+$second_3: #000000;
+// 其他色
+$third_1 :#ffffa4;
+$third_2 :#210039;
+$third_3 :#dedede;
+$third_4 :#f8dfad;
+$third_5 :#bf9057;
+$third_6 :#8c696b;
+$third_7 :#af8682;
+$third_8 :#ec1750;
+$third_9 :#7d0022;
+$third_10 :#289952;
+$third_11 :#343434;
+$third_12 :#dedede83;
+
+// 陰影
+$shadow_1 : #00000096;
+
+@mixin input_1 {
+    background: linear-gradient(to top, #f7d6a5 0%, #ffdbb8 100%);
+    border-style: solid;
+    border-color: $main_3;
+    border-radius: 3px;
+    border-width: 1px 1px 1px 1px;
+}
+
+@mixin loginBtn {
+    background: linear-gradient(to bottom, #ffe9c8 0%, #efc79f 100%);
+}
+
+@mixin signupBtn {
+    background: linear-gradient(to bottom, #440076 0%, #310054 100%);
+}
+
+@mixin languageStyle {
+    background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+    border-color: $main_3 ;
+    font-size: 15px;
+    font-weight: bold;
+    color: $main_2 ;
+}
+
+@mixin loginAfterLanguageStyle {
+    background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+    padding: 3px 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: $main_3;
+}
+
+@mixin hexagon {
+    background: linear-gradient(to bottom, #1e1e1e 0%, #393939 100%);
+}
+
+@mixin footerActive {
+    background: linear-gradient(to bottom, #350051 0%, #3f0075 45%, #4a0089 100%);
+}
+
+@mixin download {
+    background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+}
+
+@mixin moblieDownload {
+    background: linear-gradient(to top, #a9986f 15%, #d2bd8c 50%, #ffefca 100%);
+}
+
+@mixin bottomArea {
+    background: linear-gradient(top right, #1d1d1d 0%, #2a2a2a 100%);
+}
+
+@mixin signoutBtn {
+    background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+    padding: 5px 10px;
+}
+@mixin title {
+    background: linear-gradient(to right, #293d2d 0%,  50%, #356b40 100%);
+}
