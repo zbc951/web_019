@@ -71,6 +71,7 @@ table {
 button {
   outline: none;
   border: none;
+  margin: 0;
   padding: 0;
   font-family: "微軟正黑體";
   cursor: pointer;
@@ -80,6 +81,7 @@ select, input {
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: none;
   font-family: "微軟正黑體";
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -107,37 +109,41 @@ input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
+img {
+  display: block;
+}
+
 html body .bg {
-  background: url("../img/bg_img_3.png") no-repeat top;
+  background: url("../img/bg_img_3.png") no-repeat top center;
   background-size: cover;
 }
 
-html header .topArea {
+html header .top {
   background: url("../img/header_bg_1.png") no-repeat top left;
   background-size: cover;
 }
 
-html header .midArea {
+html header .mid {
   background: url("../img/header_bg_2.png") no-repeat top left;
   background-size: cover;
 }
 
-html body main .marqueeArea .marqueeBroadcast i {
+html body main .marquee .title i {
   background: url("../img/marquee_broadcast.png") no-repeat center;
   background-size: contain;
 }
 
-html body main .gruidArea ul li .gameSelect {
+html body main .typeList ul li .gameSelect {
   background: url("../img/hexagon.png") no-repeat center;
   background-size: contain;
 }
 
-html body footer .upperHalf {
+html body footer .top {
   background: url("../img/footer_bg.png") no-repeat top left;
   background-size: cover;
 }
 
-html body footer .lowerHalf {
+html body footer .bottom {
   background: url("../img/footer_bg_2.png") no-repeat top left;
   background-size: cover;
 }
@@ -167,59 +173,259 @@ html body .decorate_ic_1 {
   background-size: contain;
 }
 
-html body main aside.downloadBtn i {
+aside .download i {
   background: url("../img/download_btn.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.toTop {
+aside .toTop {
   background: url("../img/hexagon_2.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.toTop i {
+aside .toTop i {
   background: url("../img/aside_2.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.decorateLeft {
+aside .decorateLeft {
   background: url("../img/aside_1.png") no-repeat left top;
   background-size: contain;
 }
 
-html body main aside.serviceTwoFour {
+aside .serviceTwoFour {
   background: url("../img/hexagon_2.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceTwoFour i {
+aside .serviceTwoFour i {
   background: url("../img/service_24.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceLine {
+aside .serviceLine {
   background: url("../img/hexagon_2.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceLine i {
+aside .serviceLine i {
   background: url("../img/service_LINE.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceWeChat {
+aside .serviceWeChat {
   background: url("../img/hexagon_2.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceWeChat i {
+aside .serviceWeChat i {
   background: url("../img/service_weChat.png") no-repeat center;
   background-size: contain;
 }
 
-html body main aside.serviceNone {
+aside .serviceNone {
   background: url("../img/hexagon_3.png") no-repeat right;
   background-size: contain;
+}
+
+.bg.gamePage_BG {
+  background: url("../img/gamePage_Bg.png") no-repeat top center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #dfdfdf;
+}
+
+header .logo img {
+  width: 200px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+header .downList img {
+  width: 220px;
+  height: 184px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.swiper .banner {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .gameBlock img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main .eventWrap .eventTitle {
+  background: url("../img/eventTitle_bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .currentLevel {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 30px;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(1) .medal {
+  background: url("../img/medal_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) {
+  background: url("../img/vipLevel_02.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(2) .medal {
+  background: url("../img/medal_02.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) {
+  background: url("../img/vipLevel_01.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(3) .medal {
+  background: url("../img/medal_03.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) {
+  background: url("../img/vipLevel_04.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(4) .medal {
+  background: url("../img/medal_04.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) {
+  background: url("../img/vipLevel_05.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(5) .medal {
+  background: url("../img/medal_05.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) {
+  background: url("../img/vipLevel_06.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(6) .medal {
+  background: url("../img/medal_06.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) {
+  background: url("../img/vipLevel_07.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.vip .midBottom .content .vipCardList li:nth-of-type(7) .medal {
+  background: url("../img/medal_07.png") no-repeat;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(1) .pay_Icon {
+  background: url("../img/icon/svg/payWay01.svg") no-repeat center;
+  background-size: 100%;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(2) .pay_Icon {
+  background: url("../img/icon/svg/payWay02.svg") no-repeat center;
+  background-size: 100%;
+  width: 22px;
+  height: 22px;
+}
+
+.innerPage .center > div.midSide.deposit .midTop .objectList .payType li:nth-of-type(3) .pay_Icon {
+  background: url("../img/icon/svg/payWay03.svg") no-repeat center;
+  background-size: 100%;
+  width: 22px;
+  height: 22px;
+}
+
+.innerPage .center > div.midSide.bankCard .midTop .objectList .cardSet li.addCard .addBtn {
+  width: 50px;
+  height: 50px;
+  background: url("../img/icon/svg/addCard.svg") no-repeat center;
+  background-size: 100%;
+}
+
+main .helpWrap .helpBody .container div .img.withdraw01 {
+  background: url("../img/help/withdraw01.png") no-repeat;
+  background-size: 100%;
+  height: 749px;
+}
+
+main .helpWrap .helpBody .container div .img.transfer01 {
+  background: url("../img/help/transfer01.png") no-repeat;
+  background-size: 100%;
+  height: 957px;
+}
+
+main .helpWrap .helpBody .container div .img.remote01 {
+  background: url("../img/help/remote01.png") no-repeat;
+  background-size: 100%;
+  width: 187px;
+  height: 144px;
+}
+
+main .helpWrap .helpBody .container div .img.remote02 {
+  background: url("../img/help/remote02.png") no-repeat;
+  background-size: 100%;
+  width: 275px;
+  height: 379px;
+}
+
+.registerWrap {
+  background: url("../img/register_background.png") no-repeat center;
+  background-size: cover;
+}
+
+.registerWrap .signUpBlock .decPic {
+  background: url("../img/register_background2.png") no-repeat center;
+  background-size: cover;
+}
+
+aside.app .download_ic {
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon/download.png") no-repeat center;
+  background-size: 100%;
+}
+
+aside.cs .csBtn_ic {
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon/svg/csBtn.svg") no-repeat center;
+  background-size: 100%;
 }
 
 html {
@@ -228,8 +434,171 @@ html {
 }
 html body {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
+}
+html body .registerWrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+html body .registerWrap .signUpBlock {
+  width: 865px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+html body .registerWrap .signUpBlock .decPic {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .registerWrap .signUpBlock .signBlock {
+  width: 50%;
+  height: auto;
+  padding: 40px;
+}
+html body .registerWrap .signUpBlock .signBlock .title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock .title i {
+  margin-right: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form {
+  width: 100%;
+  height: auto;
+}
+html body .registerWrap .signUpBlock .signBlock form label {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) {
+  position: relative;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(2) i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 35%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5px 0 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer input {
+  width: 100%;
+}
+html body .registerWrap .signUpBlock .signBlock form label:nth-of-type(4) .outer button {
+  width: 85px;
+  height: 30px;
+  white-space: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .registerWrap .signUpBlock .signBlock form label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .registerWrap .signUpBlock .signBlock form label .remind {
+  margin: 5px 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy label input {
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+}
+html body .registerWrap .signUpBlock .signBlock .policy p {
+  margin-left: 10px;
+}
+html body .registerWrap .signUpBlock .signBlock button.check, html body .registerWrap .signUpBlock .signBlock button.enter {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+}
+html body .registerWrap .signUpBlock .signBlock button.check {
+  margin-bottom: 10px;
 }
 html body header {
   width: 100%;
@@ -239,7 +608,7 @@ html body header {
   left: 0;
   z-index: 999;
 }
-html body header .topArea {
+html body header .top {
   width: 100%;
   height: 40px;
   display: -webkit-box;
@@ -249,37 +618,27 @@ html body header .topArea {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-html body header .topArea .purpleArea {
-  width: 1300px;
-  height: 100%;
+html body header .top .block {
   background: -webkit-gradient(linear, right top, left top, from(#41004d), color-stop(45%, #5c006a), to(#730072));
   background: linear-gradient(to left, #41004d 0%, #5c006a 45%, #730072 100%);
   -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5882352941);
           box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5882352941);
+  width: 1300px;
+  height: 100%;
   position: relative;
-  padding: 0 100px 0 0;
+  padding-right: 100px;
 }
-html body header .topArea .purpleArea::before {
+html body header .top .block::before {
+  border-color: transparent #730072;
   content: "";
-  border-style: solid;
   border-width: 21px 36px 24px 0px;
-  border-color: transparent #730072 transparent transparent;
+  border-style: solid;
   position: absolute;
   top: -5px;
   left: -36px;
 }
-html body header .topArea .purpleArea .userList {
+html body header .top .block .userList {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-html body header .topArea .purpleArea .userList li {
-  width: auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,368 +646,308 @@ html body header .topArea .purpleArea .userList li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-html body header .topArea .purpleArea .userList li form {
-  width: auto;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body header .topArea .purpleArea .userList li form label {
-  width: auto;
-  height: auto;
+html body header .top .block .userList label {
   position: relative;
 }
-html body header .topArea .purpleArea .userList li form label.acc::before {
+html body header .top .block .userList label.account::before {
+  background: url("../img/border_trig.png") no-repeat;
+  background-size: contain;
   content: "";
   width: 19px;
   height: 30px;
-  background: url("../img/border_trig.png") no-repeat;
-  background-size: contain;
   position: absolute;
   top: 0;
   left: -13px;
 }
-html body header .topArea .purpleArea .userList li form label.pas::after {
+html body header .top .block .userList label.password::after {
+  background: url("../img/border_trig.png") no-repeat;
+  background-size: contain;
   content: "";
   width: 19px;
   height: 30px;
-  background: url("../img/border_trig.png") no-repeat;
-  background-size: contain;
   position: absolute;
   top: 0;
   right: -13px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-html body header .topArea .purpleArea .userList li form label input {
-  width: 195px;
-  height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#f7d6a5), to(#ffdbb8));
-  background: linear-gradient(to top, #f7d6a5 0%, #ffdbb8 100%);
-  border-style: solid;
-  border-color: #ffffff;
-  border-radius: 3px;
-  border-width: 1px 1px 1px 1px;
-  margin: 0 5px;
-  padding: 0 30px 0 30px;
-}
-html body header .topArea .purpleArea .userList li form label input.account {
-  border-width: 1px 1px 1px 0;
-}
-html body header .topArea .purpleArea .userList li form label input.password {
-  border-width: 1px 0 1px 1px;
-}
-html body header .topArea .purpleArea .userList li form label input::-webkit-input-placeholder {
-  font-size: 15px;
-  color: #730072;
-  font-weight: bold;
-  text-align: center;
-}
-html body header .topArea .purpleArea .userList li form label input::-moz-placeholder {
-  font-size: 15px;
-  color: #730072;
-  font-weight: bold;
-  text-align: center;
-}
-html body header .topArea .purpleArea .userList li form label input:-ms-input-placeholder {
-  font-size: 15px;
-  color: #730072;
-  font-weight: bold;
-  text-align: center;
-}
-html body header .topArea .purpleArea .userList li form label input::-ms-input-placeholder {
-  font-size: 15px;
-  color: #730072;
-  font-weight: bold;
-  text-align: center;
-}
-html body header .topArea .purpleArea .userList li form label input::placeholder {
-  font-size: 15px;
-  color: #730072;
-  font-weight: bold;
-  text-align: center;
-}
-html body header .topArea .purpleArea .userList li form button {
-  width: auto;
-  height: 31px;
+html body header .top .block .userList .btn {
   border-style: solid;
   border-width: 1px 0 1px;
-  border-color: #ffffff;
-  position: relative;
-  padding: 0 5px;
-  margin: 0 0 0 50px;
-}
-html body header .topArea .purpleArea .userList li form button.loginBtn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffe9c8), to(#efc79f));
-  background: linear-gradient(to bottom, #ffe9c8 0%, #efc79f 100%);
-}
-html body header .topArea .purpleArea .userList li form button.loginBtn p {
-  color: #730072;
-}
-html body header .topArea .purpleArea .userList li form button.loginBtn::before {
-  content: "";
-  width: 19px;
+  border-color: #fff;
   height: 31px;
-  background: url("../img/border_trig_2.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: -19px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-html body header .topArea .purpleArea .userList li form button.loginBtn::after {
-  content: "";
-  width: 19px;
-  height: 31px;
-  background: url("../img/border_trig_2.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  right: -19px;
-}
-html body header .topArea .purpleArea .userList li form button.signupBtn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#440076), to(#310054));
-  background: linear-gradient(to bottom, #440076 0%, #310054 100%);
-  position: relative;
-}
-html body header .topArea .purpleArea .userList li form button.signupBtn p {
-  color: #ffffff;
-}
-html body header .topArea .purpleArea .userList li form button.signupBtn::before {
-  content: "";
-  width: 19px;
-  height: 31px;
-  background: url("../img/border_trig_3.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: -19px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-html body header .topArea .purpleArea .userList li form button.signupBtn::after {
-  content: "";
-  width: 19px;
-  height: 31px;
-  background: url("../img/border_trig_3.png") no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  right: -19px;
-}
-html body header .topArea .purpleArea .userList li form button p {
   font-size: 15px;
   font-weight: bold;
+  padding: 0 5px;
+  position: relative;
+  margin-left: 50px;
 }
-html body header .topArea .purpleArea .userList li.forgetBtn button {
-  width: auto;
-  height: auto;
-  background: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 0 10px;
-}
-html body header .topArea .purpleArea .userList li.forgetBtn button .questionIc {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  border: solid 1px #f7d6a5;
+html body header .top .block .userList .forget {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 5px 0 0;
+  margin: 0 40px;
 }
-html body header .topArea .purpleArea .userList li.forgetBtn button p {
-  font-size: 15px;
+html body header .top .block .userList .forget > svg {
+  fill: #f7d6a5;
+  width: 20px;
+  height: 20px;
+}
+html body header .top .block .userList .forget p {
   color: #f7d6a5;
-  border-bottom: solid 1px #f7d6a5;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-left: 5px;
 }
-html body header .topArea .purpleArea .userList li.languageBtn label {
-  width: auto;
-  height: auto;
-  margin: 0 0 0 20px;
+html body header .top .block .userList .lang {
+  border-width: 1px 0 1px;
+  border-color: #fff;
+  border-style: solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7d6a5), to(#caa279));
+  background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
+  width: 66px;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
+  cursor: pointer;
 }
-html body header .topArea .purpleArea .userList li.languageBtn label::before {
+html body header .top .block .userList .lang.display > ul {
+  display: block;
+}
+html body header .top .block .userList .lang::before, html body header .top .block .userList .lang::after {
+  background: url("../img/border_trig_4.png") no-repeat center;
+  background-size: contain;
   content: "";
   width: 21px;
   height: 31px;
-  background: url("../img/border_trig_4.png") no-repeat center;
-  background-size: contain;
   position: absolute;
   top: 0;
   left: -21px;
 }
-html body header .topArea .purpleArea .userList li.languageBtn label::after {
-  content: "";
-  width: 21px;
-  height: 31px;
-  background: url("../img/border_trig_4.png") no-repeat center;
-  background-size: contain;
-  position: absolute;
-  top: 0;
+html body header .top .block .userList .lang::after {
+  left: unset;
   right: -21px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-html body header .topArea .purpleArea .userList li.languageBtn label select {
-  padding: 5px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f7d6a5), to(#caa279));
-  background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
-  border-style: solid;
-  border-width: 1px 0 1px 0;
-  border-color: #ffffff;
+html body header .top .block .userList .lang p {
+  color: #730072;
   font-size: 15px;
   font-weight: bold;
-  color: #730072;
-  position: relative;
-  cursor: pointer;
 }
-html body header .topArea .purpleArea .userList li.languageBtn label i {
+html body header .top .block .userList .lang i {
+  border-color: #730072;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
   width: 8px;
   height: 8px;
-  border-style: solid;
-  border-width: 0 0 2px 2px;
-  border-color: #730072;
-  rotate: -45deg;
   position: absolute;
-  top: 40%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: -10px;
+  top: 50%;
+  right: -8px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
   z-index: 1;
   pointer-events: none;
 }
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label {
-  margin: 0;
-}
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label::before {
+html body header .top .block .userList .lang ul {
+  border: solid 1px #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7d6a5), to(#caa279));
+  background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
+  width: 102px;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  padding: 5px 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
 }
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label::after {
-  display: none;
+html body header .top .block .userList .lang ul li {
+  padding: 5px 16px;
 }
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label select {
+html body header .top .block .userList .lang ul li:hover, html body header .top .block .userList .lang ul li:active, html body header .top .block .userList .lang ul li.active {
+  background: #caa279;
+}
+html body header .top .block .userList .lang ul li:hover p, html body header .top .block .userList .lang ul li:active p, html body header .top .block .userList .lang ul li.active p {
+  color: #000;
+}
+html body header .top .block .userList .total {
   background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
   background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
-  padding: 3px 10px;
-  border: none;
-  font-size: 15px;
-  font-weight: bold;
-  color: #ffffff;
-}
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label select option {
-  color: #000000;
-}
-html body header .topArea .purpleArea .userList li.languageBtn.loginAfter label i {
-  border-color: #ffffff;
-  top: 43%;
-  right: 0;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol {
-  width: auto;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li p {
-  color: #7d0022;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li div {
-  border: solid 1px #8c696b;
-  border-radius: 3px;
-  background: #ffffff;
-  padding: 5px 5px;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li div p {
-  font-size: 15px;
-  font-weight: bold;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li.userStatus p {
-  font-size: 14px;
-  color: #f8dfad;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li.userStatus p span {
-  color: #ec1750;
-  margin: 0 5px;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li.moneyStatus div p {
-  color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-html body header .topArea .purpleArea .userList.loginAfter ol li.moneyStatus div p i {
-  width: 8px;
-  height: 8px;
+  border-color: #fff;
+  border-width: 1px 0 1px;
   border-style: solid;
-  border-width: 0 2px 2px 0;
-  border-color: #000000;
-  -webkit-transform: translateY(3px) rotate(45deg);
-          transform: translateY(3px) rotate(45deg);
-  margin: 0 0 0 8px;
+  width: 80px;
+  height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 20px;
 }
-html body header .topArea .purpleArea .userList.loginAfter ol li.signoutBtn div {
+html body header .top .block .userList .total.display ul {
+  display: block;
+}
+html body header .top .block .userList .total > p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body header .top .block .userList .total::after {
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html body header .top .block .userList .total > ul {
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 1px;
   background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
   background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+  width: 290px;
+  height: auto;
+  position: absolute;
+  top: 31px;
+  left: 0;
+  padding: 5px 0;
+  display: none;
+}
+html body header .top .block .userList .total > ul li {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body header .top .block .userList .total > ul li p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+html body header .top .block .userList .userName {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+  border-color: #fff;
+  border-width: 1px 0 1px;
+  border-style: solid;
+  height: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+}
+html body header .top .block .userList .userName span {
+  margin-right: 20px;
+}
+html body header .top .block .userList.loginBox .btn {
+  margin-left: 20px;
+}
+html body header .top .block .userList.loginBox .lang {
+  width: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+  margin-left: 20px;
+  padding: 0 10px;
+}
+html body header .top .block .userList.loginBox .lang ul {
+  width: 100%;
+  padding: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+}
+html body header .top .block .userList.loginBox .lang ul li {
   padding: 5px 10px;
 }
-html body header .topArea .purpleArea .userList.loginAfter ol li.signoutBtn div a p {
-  color: #ffffff;
+html body header .top .block .userList.loginBox .lang ul li p {
+  color: #fff;
 }
-html body header .midArea {
+html body header .top .block .userList.loginBox .lang > p {
+  color: #fff;
+}
+html body header .top .block .userList.loginBox .lang::before, html body header .top .block .userList.loginBox .lang::after {
+  content: unset;
+}
+html body header .top .block .userList.loginBox .lang i {
+  right: 10px;
+  border-color: #fff;
+}
+html body header .mid {
   width: 100%;
   height: 80px;
   position: relative;
   z-index: -1;
 }
-html body header .midArea .centerArea {
+html body header .mid .center {
   width: 1400px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
-html body header .midArea .centerArea .logo {
-  width: auto;
-  height: auto;
-}
-html body header .midArea .centerArea .logo img {
+html body header .mid .center .logo {
   width: 226px;
   height: 40px;
+}
+html body header .mid .center .logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-html body header .midArea .centerArea .menu {
-  width: auto;
+html body header .mid .center .menu {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body header .midArea .centerArea .menu li {
-  width: auto;
+html body header .mid .center .menu li {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -659,13 +958,13 @@ html body header .midArea .centerArea .menu li {
   position: relative;
   cursor: pointer;
 }
-html body header .midArea .centerArea .menu li .hexagon {
-  width: 95px;
-  height: 79px;
+html body header .mid .center .menu li .hexagon {
   background: -webkit-gradient(linear, left top, left bottom, from(#1e1e1e), to(#393939));
   background: linear-gradient(to bottom, #1e1e1e 0%, #393939 100%);
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 95px;
+  height: 79px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -674,7 +973,7 @@ html body header .midArea .centerArea .menu li .hexagon {
   z-index: -1;
   display: none;
 }
-html body header .midArea .centerArea .menu li .hexagon div {
+html body header .mid .center .menu li .hexagon .line {
   width: calc(100% - 25px);
   height: 4px;
   background: #f7d6a5;
@@ -682,29 +981,29 @@ html body header .midArea .centerArea .menu li .hexagon div {
   bottom: 2px;
   left: 1px;
 }
-html body header .midArea .centerArea .menu li a {
+html body header .mid .center .menu li a {
+  color: #310054;
   font-size: 18px;
   letter-spacing: 1px;
-  color: #310054;
   padding: 0 25px;
 }
-html body header .midArea .centerArea .menu li:hover .hexagon, html body header .midArea .centerArea .menu li:active .hexagon, html body header .midArea .centerArea .menu li.active .hexagon {
+html body header .mid .center .menu li:hover .hexagon, html body header .mid .center .menu li:active .hexagon, html body header .mid .center .menu li.active .hexagon {
   display: block;
 }
-html body header .midArea .centerArea .menu li:hover a, html body header .midArea .centerArea .menu li:active a, html body header .midArea .centerArea .menu li.active a {
-  color: #ffffff;
+html body header .mid .center .menu li:hover a, html body header .mid .center .menu li:active a, html body header .mid .center .menu li.active a {
+  color: #fff;
 }
-html body header .bottomArea {
-  width: 100%;
-  height: 226px;
+html body header .bottom {
   background: -webkit-gradient(linear, right top, left bottom, from(#1d1d1d), to(#2a2a2a));
   background: linear-gradient(top right, #1d1d1d 0%, #2a2a2a 100%);
+  width: 100%;
+  height: 226px;
   display: none;
 }
-html body header .bottomArea.display {
+html body header .bottom.display {
   display: block;
 }
-html body header .bottomArea .listArea {
+html body header .bottom .list {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -717,30 +1016,30 @@ html body header .bottomArea .listArea {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body header .bottomArea .listArea ul {
+html body header .bottom .list ul {
   width: 1320px;
   height: 100%;
   overflow: hidden;
   display: none;
 }
-html body header .bottomArea .listArea ul.display {
+html body header .bottom .list ul.display {
   display: block;
 }
-html body header .bottomArea .listArea ul ol {
+html body header .bottom .list ul ol {
   width: auto;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body header .bottomArea .listArea ul ol li {
+html body header .bottom .list ul ol li {
   width: 220px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-html body header .bottomArea .listArea ul ol li a {
+html body header .bottom .list ul ol li a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -754,43 +1053,43 @@ html body header .bottomArea .listArea ul ol li a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-html body header .bottomArea .listArea ul ol li a div {
+html body header .bottom .list ul ol li a div {
   width: 220px;
   height: 184px;
 }
-html body header .bottomArea .listArea ul ol li a div img {
+html body header .bottom .list ul ol li a div img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-html body header .bottomArea .listArea ul ol li a p {
+html body header .bottom .list ul ol li a p {
+  color: #f7d6a5;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: #f7d6a5;
   margin-top: 5px;
 }
-html body header .bottomArea .listArea .arrow_ic {
+html body header .bottom .list .arrow_ic {
   width: 40px;
   height: 100%;
   position: relative;
   cursor: pointer;
   pointer-events: none;
 }
-html body header .bottomArea .listArea .arrow_ic.active {
+html body header .bottom .list .arrow_ic.active {
   pointer-events: visible;
 }
-html body header .bottomArea .listArea .arrow_ic.active::before {
+html body header .bottom .list .arrow_ic.active::before {
   opacity: 1;
 }
-html body header .bottomArea .listArea .arrow_ic::before {
+html body header .bottom .list .arrow_ic::before {
   content: "";
   width: 15px;
   height: 15px;
   border-style: solid;
   border-width: 4px 4px 0 0;
-  border-color: #ffffff;
+  border-color: #fff;
   position: absolute;
   top: 50%;
   left: 60%;
@@ -798,7 +1097,7 @@ html body header .bottomArea .listArea .arrow_ic::before {
           transform: translate(-50%, -50%) rotate(-135deg);
   opacity: 0.3;
 }
-html body header .bottomArea .listArea .arrow_ic.next {
+html body header .bottom .list .arrow_ic.next {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
@@ -843,7 +1142,7 @@ html body main .swiper-banner .swiper-button-next::after {
   height: 15px;
   border-style: solid;
   border-width: 8px 8px 0 0;
-  border-color: #ffffff #ffffff transparent transparent;
+  border-color: #fff #fff transparent transparent;
   position: absolute;
   top: 50%;
   left: 45%;
@@ -869,7 +1168,7 @@ html body main .swiper-banner .swiper-pagination {
 html body main .swiper-banner .swiper-pagination span {
   width: 28px;
   height: 24px;
-  background: #ffffff;
+  background: #fff;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   -webkit-transform: rotate(30deg);
@@ -880,42 +1179,25 @@ html body main .swiper-banner .swiper-pagination span {
 html body main .swiper-banner .swiper-pagination span:hover, html body main .swiper-banner .swiper-pagination span:active, html body main .swiper-banner .swiper-pagination span.swiper-pagination-bullet-active {
   background: #ffffa4;
 }
-html body main .marqueeArea {
+html body main .marquee {
   width: 1300px;
   height: 40px;
-  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 25px auto 65px;
   position: relative;
 }
-html body main .marqueeArea::after {
-  content: "";
-  width: 50px;
-  height: 40px;
-  background: #ffffff;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  position: absolute;
-  top: 0;
-  right: -14px;
-  z-index: -1;
-}
-html body main .marqueeArea .marqueeBlock {
-  width: 52px;
-  height: 41px;
-  background: #210039;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-html body main .marqueeArea .marqueeBroadcast {
+html body main .marquee .title {
+  background: #fff;
   width: 50px;
   height: 41px;
-  background: #ffffff;
   -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   display: -webkit-box;
@@ -927,24 +1209,30 @@ html body main .marqueeArea .marqueeBroadcast {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 0;
-  left: -12px;
-  z-index: 9;
   cursor: pointer;
+  margin-right: 5px;
 }
-html body main .marqueeArea .marqueeBroadcast i {
+html body main .marquee .title i {
   width: 25px;
   height: 20px;
 }
-html body main .marqueeArea .marqueeTextBox {
+html body main .marquee .textBox {
+  -webkit-clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0% 100%, 1% 50%, 0% 0%);
+          clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0% 100%, 1% 50%, 0% 0%);
+  background: #fff;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
-html body main .marqueeArea .marqueeTextBox p {
-  font-size: 17px;
+html body main .marquee .textBox p {
   color: #310054;
+  font-size: 17px;
   font-weight: bold;
   display: inline-block;
   white-space: nowrap;
@@ -972,12 +1260,12 @@ html body main .marqueeArea .marqueeTextBox p {
             transform: translateX(-100%);
   }
 }
-html body main .gruidArea {
+html body main .typeList {
   width: 1300px;
   height: auto;
   margin: 0 auto;
 }
-html body main .gruidArea ul {
+html body main .typeList ul {
   width: 100%;
   height: auto;
   display: -ms-grid;
@@ -985,7 +1273,7 @@ html body main .gruidArea ul {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 0px;
 }
-html body main .gruidArea ul li {
+html body main .typeList ul li {
   width: 300px;
   min-height: 345px;
   display: -webkit-box;
@@ -999,23 +1287,23 @@ html body main .gruidArea ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-html body main .gruidArea ul li:nth-child(even) {
+html body main .typeList ul li:nth-child(even) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-html body main .gruidArea ul li .gameSelect {
+html body main .typeList ul li .gameSelect {
   width: 100%;
   height: 218px;
   position: relative;
 }
-html body main .gruidArea ul li .gameSelect .trigger {
+html body main .typeList ul li .gameSelect .trigger {
   width: 300px;
   height: 300px;
   margin: 0 auto;
   cursor: pointer;
 }
-html body main .gruidArea ul li .gameSelect .trigger img {
+html body main .typeList ul li .gameSelect .trigger img {
   width: auto;
   height: auto;
   -o-object-fit: contain;
@@ -1024,14 +1312,14 @@ html body main .gruidArea ul li .gameSelect .trigger img {
   top: 0;
   left: 0;
 }
-html body main .gruidArea ul li .gameSelect .trigger P {
+html body main .typeList ul li .gameSelect .trigger P {
   font-size: 35px;
   color: #bf9057;
   position: absolute;
   top: 86px;
   left: 15px;
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.live_aa img, html body main .gruidArea ul li .gameSelect .trigger:active.live_aa img, html body main .gruidArea ul li .gameSelect .trigger.active.live_aa img {
+html body main .typeList ul li .gameSelect .trigger:hover.live_aa img, html body main .typeList ul li .gameSelect .trigger:active.live_aa img, html body main .typeList ul li .gameSelect .trigger.active.live_aa img {
   -webkit-animation: live_aa_move 0.5s linear;
           animation: live_aa_move 0.5s linear;
 }
@@ -1061,7 +1349,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.live_aa img, html bod
     opacity: 1;
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.live_bb img, html body main .gruidArea ul li .gameSelect .trigger:active.live_bb img, html body main .gruidArea ul li .gameSelect .trigger.active.live_bb img {
+html body main .typeList ul li .gameSelect .trigger:hover.live_bb img, html body main .typeList ul li .gameSelect .trigger:active.live_bb img, html body main .typeList ul li .gameSelect .trigger.active.live_bb img {
   -webkit-animation: live_bb_move 1s linear 0s;
           animation: live_bb_move 1s linear 0s;
 }
@@ -1117,7 +1405,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.live_bb img, html bod
             transform: translateY(0%) translateX(0%);
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.slot_bbb img, html body main .gruidArea ul li .gameSelect .trigger:active.slot_bbb img, html body main .gruidArea ul li .gameSelect .trigger.active.slot_bbb img {
+html body main .typeList ul li .gameSelect .trigger:hover.slot_bbb img, html body main .typeList ul li .gameSelect .trigger:active.slot_bbb img, html body main .typeList ul li .gameSelect .trigger.active.slot_bbb img {
   -webkit-animation: slot_bbb_move 1s linear 0s;
           animation: slot_bbb_move 1s linear 0s;
 }
@@ -1147,7 +1435,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.slot_bbb img, html bo
     opacity: 1;
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.slot_ccc img, html body main .gruidArea ul li .gameSelect .trigger:active.slot_ccc img, html body main .gruidArea ul li .gameSelect .trigger.active.slot_ccc img {
+html body main .typeList ul li .gameSelect .trigger:hover.slot_ccc img, html body main .typeList ul li .gameSelect .trigger:active.slot_ccc img, html body main .typeList ul li .gameSelect .trigger.active.slot_ccc img {
   -webkit-animation: slot_ccc_move 1s linear 0s;
           animation: slot_ccc_move 1s linear 0s;
 }
@@ -1195,7 +1483,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.slot_ccc img, html bo
             transform: scale(1);
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.board_abc img, html body main .gruidArea ul li .gameSelect .trigger:active.board_abc img, html body main .gruidArea ul li .gameSelect .trigger.active.board_abc img {
+html body main .typeList ul li .gameSelect .trigger:hover.board_abc img, html body main .typeList ul li .gameSelect .trigger:active.board_abc img, html body main .typeList ul li .gameSelect .trigger.active.board_abc img {
   -webkit-animation: board_abc_move 1s linear 0s;
           animation: board_abc_move 1s linear 0s;
 }
@@ -1223,7 +1511,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.board_abc img, html b
             transform: rotate(-360deg) scale(1);
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.lottery_abc img, html body main .gruidArea ul li .gameSelect .trigger:active.lottery_abc img, html body main .gruidArea ul li .gameSelect .trigger.active.lottery_abc img {
+html body main .typeList ul li .gameSelect .trigger:hover.lottery_abc img, html body main .typeList ul li .gameSelect .trigger:active.lottery_abc img, html body main .typeList ul li .gameSelect .trigger.active.lottery_abc img {
   -webkit-animation: lottery_abc_move 1s linear 0s;
           animation: lottery_abc_move 1s linear 0s;
 }
@@ -1271,7 +1559,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.lottery_abc img, html
             transform: scale(1);
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.sport_abc img, html body main .gruidArea ul li .gameSelect .trigger:active.sport_abc img, html body main .gruidArea ul li .gameSelect .trigger.active.sport_abc img {
+html body main .typeList ul li .gameSelect .trigger:hover.sport_abc img, html body main .typeList ul li .gameSelect .trigger:active.sport_abc img, html body main .typeList ul li .gameSelect .trigger.active.sport_abc img {
   -webkit-animation: sport_abc_move 1s linear 0s;
           animation: sport_abc_move 1s linear 0s;
 }
@@ -1321,7 +1609,7 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.sport_abc img, html b
             transform: translate(0);
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger:hover.fish_tt img, html body main .gruidArea ul li .gameSelect .trigger:active.fish_tt img, html body main .gruidArea ul li .gameSelect .trigger.active.fish_tt img {
+html body main .typeList ul li .gameSelect .trigger:hover.fish_tt img, html body main .typeList ul li .gameSelect .trigger:active.fish_tt img, html body main .typeList ul li .gameSelect .trigger.active.fish_tt img {
   -webkit-animation: fish_tt_move 1s ease-in-out 0s;
           animation: fish_tt_move 1s ease-in-out 0s;
 }
@@ -1351,72 +1639,2415 @@ html body main .gruidArea ul li .gameSelect .trigger:hover.fish_tt img, html bod
     opacity: 1;
   }
 }
-html body main .gruidArea ul li .gameSelect .trigger.live_aa img {
+html body main .typeList ul li .gameSelect .trigger.live_aa img {
   width: 195px;
   height: 258px;
   opacity: 1;
   top: -58px;
   left: 50px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.live_bb img {
+html body main .typeList ul li .gameSelect .trigger.live_bb img {
   width: 217px;
   height: 287px;
   top: -86px;
   left: 14px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.slot_bbb img {
+html body main .typeList ul li .gameSelect .trigger.slot_bbb img {
   width: 248px;
   height: 231px;
   top: -30px;
   left: 54px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.slot_ccc img {
+html body main .typeList ul li .gameSelect .trigger.slot_ccc img {
   width: 318px;
   height: 270px;
   top: -44px;
   left: 46px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.board_abc img {
+html body main .typeList ul li .gameSelect .trigger.board_abc img {
   width: 324px;
   height: 290px;
   top: -63px;
   left: -36px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.lottery_abc img {
+html body main .typeList ul li .gameSelect .trigger.lottery_abc img {
   width: 286px;
   height: 224px;
   top: -28px;
   left: 6px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.sport_abc img {
+html body main .typeList ul li .gameSelect .trigger.sport_abc img {
   width: 350px;
   height: 350px;
   top: -109px;
   left: -5px;
 }
-html body main .gruidArea ul li .gameSelect .trigger.fish_tt img {
+html body main .typeList ul li .gameSelect .trigger.fish_tt img {
   width: 308px;
   height: 236px;
   top: -33px;
   left: 41px;
 }
-html body main .gruidArea ul li p {
+html body main .typeList ul li p {
+  color: #f8dfad;
   font-size: 35px;
   font-weight: bold;
-  color: #f8dfad;
 }
-html body main aside {
+html body .innerPage .marqueeWrap {
+  width: 1400px;
+  height: 50px;
+}
+html body .innerPage .center {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div {
+  height: auto;
+}
+html body .innerPage .center > div.leftSide {
+  width: 17%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.leftSide .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 0 0;
+}
+html body .innerPage .center > div.leftSide .content p {
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html body .innerPage .center > div.leftSide .content p.userAccount .level {
+  padding: 2px 8px;
+  margin-left: 5px;
+}
+html body .innerPage .center > div.leftSide .content p.joinDay {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 25px;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li {
+  width: 32%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .quickBtn a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.leftSide .content .quickSelect li .btnName {
+  text-align: center;
+  margin-top: 5px;
+}
+html body .innerPage .center > div.leftSide .content .innerNav {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li {
+  width: 100%;
+  height: 50px;
+  display: block;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  padding: 0 25px;
+  position: relative;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html body .innerPage .center > div.leftSide .content .innerNav li a i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.rightSide {
+  width: 17%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 15px;
+}
+html body .innerPage .center > div.rightSide .containerBox {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.rightSide .containerBox:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.rightSide .containerBox .listTitle .more i {
+  margin-left: 5px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList {
+  width: 100%;
+  height: 305px;
+  overflow: auto;
+  position: relative;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .noData {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain {
+  width: 100%;
+  height: auto;
+  overflow-y: overlay;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li {
+  width: 83%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.betHistory {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock {
+  border-bottom: none;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock img {
+  width: 100%;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li.eventBlock .eventInfo {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .state {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .detail i {
+  margin: 0 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half {
+  width: 50%;
+  height: auto;
+}
+html body .innerPage .center > div.rightSide .containerBox .recordList .contain li .winLose .half span {
+  display: block;
+  margin-bottom: 5px;
+}
+html body .innerPage .center > div.midSide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .innerPage .center > div.midSide .innerPageTitle {
+  width: 100%;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn {
+  width: auto;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn p {
+  font-size: 14px;
+  margin: 2px 0 2px 5px;
+}
+html body .innerPage .center > div.midSide .innerPageTitle .btn i {
+  font-size: 15px;
+}
+html body .innerPage .center > div.midSide .midTop {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .objectList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+}
+html body .innerPage .center > div.midSide .midTop .objectList i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-left, html body .innerPage .center > div.midSide .midTop .objectList i.fa-chevron-right {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .objectList ul {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midTop .objectList ul li {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox {
+  width: 20%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox:nth-of-type(2) .typeName span {
+  width: auto;
+  height: auto;
+  padding: 3px 8px 4px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .accountWrap .typeBox .typeName i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .titleS {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter {
+  width: 100%;
+  height: 110px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter.active {
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midTop .platformWallet .stateWrap i {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide .midTop form label {
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midTop form i.fa-caret-down {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide .midPageList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 0 20px;
+}
+html body .innerPage .center > div.midSide .midPageList li {
+  width: 110px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide .midPageList li:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide .midBottom {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom .content {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+html body .innerPage .center > div.midSide .midBottom .content.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide .midBottom .innerPageTitle {
+  border-bottom: none;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide .midBottom .titleM {
+  margin: 0 0 20px 0;
+}
+html body .innerPage .center > div.midSide .midBottom .titleS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide .midBottom label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom label .itemName {
+  margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide .midBottom label select,
+html body .innerPage .center > div.midSide .midBottom label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midBottom form {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 345px 355px 405px;
+  grid-template-columns: 345px 355px 405px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label {
+  width: 345px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock label:nth-of-type(1) {
+  grid-column-start: span 4;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap {
+  width: auto;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 30px;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .selectBtn_Wrap button {
+  width: 70px;
+  height: 100%;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide .midBottom form.searchBlock .searchBtn {
+  width: 35%;
+  height: 40px;
+  justify-self: flex-end;
+}
+html body .innerPage .center > div.midSide .midBottom form label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide .midBottom form label .itemName {
+  margin-right: 25px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide .midBottom form label select,
+html body .innerPage .center > div.midSide .midBottom form label input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide .midBottom form label select.inputStyle_2,
+html body .innerPage .center > div.midSide .midBottom form label input.inputStyle_2 {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide .midBottom form label .remind {
+  position: absolute;
+  bottom: -16px;
+  left: 105px;
+}
+html body .innerPage .center > div.midSide .midBottom form label i {
+  width: 13px;
+  height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 45%;
+  right: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide .midBottom form button.submitBtn {
+  margin: 55px 0 0 105px;
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox {
+  width: 95%;
+  height: auto;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox p {
+  font-size: 13px;
+  line-height: 25px;
+}
+html body .innerPage .center > div.midSide .midBottom .remindBox p.remindTitle {
+  line-height: unset;
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide .midBottom table {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide .midBottom table tr th {
+  width: auto;
+  height: 25px;
+}
+html body .innerPage .center > div.midSide .midBottom table tr td {
+  width: auto;
+  height: 50px;
+  vertical-align: middle;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state {
+  display: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state .info {
+  padding: 0 0 0 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul {
+  padding: 0 20px;
+  margin: 10px 0 0 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li {
+  padding: 0;
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midTop .memberData_state ul li i {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom .titleM:not(:first-child) {
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form::before {
+  content: "";
+  width: 104.8%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half {
+  width: 46%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half .submitBtn {
+  width: 288px;
+  margin: 40px 0 0 105px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind {
+  margin: 20px 0;
+  position: unset;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom form .half > .remind span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord input {
+  width: 196px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label.changePassWord button {
+  width: 70px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label button {
+  width: auto;
+  padding: 5px;
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput {
+  width: 286px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 3px 3px 15px;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput input {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom label .btnInput button {
+  width: 70px;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr th {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.memberCenter .midBottom table tr td {
+  height: 40px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom {
+  padding: 0 20px 20px 20px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .innerPageTitle {
+  height: 60px;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 290px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 290px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label.qrCode {
+  grid-row-start: span 2;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label.qrCode img {
+  width: 90px;
+  height: 90px;
+  margin-left: 100px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label .itemName {
+  width: 55px;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label .inputStyle_2 {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteWrap label button {
+  width: auto;
+  white-space: nowrap;
+  padding: 8px 5px;
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .inviteImg {
+  width: 100%;
+  height: 652px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html body .innerPage .center > div.midSide.invite .midBottom .infoBlock {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .innerPageTitle {
+  height: auto;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  border: none;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar {
+  width: 100%;
+  height: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .bar span {
+  width: 8%;
+  height: 100%;
+  display: inline-block;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext {
+  width: 50%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.deposit_Num .bar span {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li.levelWater_Num .bar span {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul.toNext li .bar {
+  width: 100%;
+  height: 8px;
+  margin: 0 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content ul li {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+  margin: 30px 0 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare::before {
+  content: "";
+  width: 103.7%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare ul li .validNum {
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .levelWelfare button.more {
+  width: 30%;
+  height: 40px;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .titleM i {
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  pointer-events: visible;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-left {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList i.fa-chevron-right {
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul {
+  width: 100%;
+  max-width: 1075px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li {
+  width: 280px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .medal {
+  width: 60px;
+  height: 70px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipCardList ul ol li .vipDetail p span {
+  display: block;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table {
+  margin-bottom: 50px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.promotion tr td {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.return tr td, html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr th,
+html body .innerPage .center > div.midSide.vip .midBottom .content table.discount tr td {
+  width: 16.6666666667%;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .title {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice .em {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul {
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 40px;
+}
+html body .innerPage .center > div.midSide.vip .midBottom .content .vipNotice ul li {
+  width: 100%;
+  height: auto;
+  list-style: cjk-ideographic;
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox {
+  width: 50%;
+  height: auto;
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .typeName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .typeName span {
+  padding: 4px 8px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .numTotal {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .withdrawLimit {
+  margin-top: 40px;
+}
+html body .innerPage .center > div.midSide.wallet .midTop .walletWrap .typeBox .withdrawLimit span {
+  margin-left: 30px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter .platformBox {
+  width: 100%;
+  height: 100px;
+  padding: 15px 10px;
+}
+html body .innerPage .center > div.midSide.wallet .midBottom .platformWallet .platformOuter .platformBox .num {
+  margin-top: 15px;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content .searchBlock .searchBtn {
+  justify-self: flex-end;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr th:nth-of-type(6) {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(1), html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td:nth-of-type(6) {
+  width: 20%;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table.water tr td p {
+  border: none;
+}
+html body .innerPage .center > div.midSide.dealRecord .midBottom .content table tr th {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom {
+  padding: 0 20px 20px;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock {
+  -ms-grid-columns: 30% 30% 40%;
+  grid-template-columns: 30% 30% 40%;
+  padding: 0;
+  margin-top: 10px;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock label {
+  width: 100%;
+  -ms-grid-column: unset;
+      grid-column-start: unset;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content form.searchBlock label .itemName {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content table tr th,
+html body .innerPage .center > div.midSide.pointRecord .midBottom .content table tr td {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .innerPageTitle {
+  padding: 10px 20px 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock {
+  -ms-grid-columns: minmax(332px, 1fr) 20px minmax(332px, 1fr) 20px minmax(332px, 1fr);
+  grid-template-columns: repeat(3, minmax(332px, 1fr));
+  gap: 20px;
+  padding: 20px 20px 30px;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock::before {
+  width: 100%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label {
+  width: 100%;
+  -ms-grid-column: unset;
+      grid-column-start: unset;
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label:nth-of-type(3) {
+  grid-column-start: 1 span;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock label .itemName {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap {
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content form.searchBlock .selectBtn_Wrap .hint {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p {
+  text-align: center;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(1), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(2), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(3) {
+  width: 25%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(5) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap p:nth-of-type(6),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap p:nth-of-type(6) {
+  width: 5%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .titleWrap i,
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList .detailWrap i {
+  margin: 0 auto;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li.active table {
+  display: table;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li .detailWrap {
+  width: 97%;
+  margin: 0 auto;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table {
+  width: 97%;
+  height: auto;
+  display: none;
+  margin: 8px auto 20px;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(1),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(1) {
+  width: 15%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(2),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(2) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(3),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(3) {
+  width: 30%;
+}
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(4), html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr th:nth-of-type(5),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(4),
+html body .innerPage .center > div.midSide.betRecord .midBottom .content .recordList li table tr td:nth-of-type(5) {
+  width: 10%;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock.unlock .eventTitle {
+  -ms-grid-columns: auto 14% 47.5% auto 14%;
+  grid-template-columns: auto 14% 47.5% auto 14%;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock:not(:last-child) {
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.type, html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block p.name {
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount {
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span {
+  margin: 0 5px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .pointCount span:first-child {
+  margin: 0 5px 0 15px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button {
+  width: 75px;
+  height: 30px;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .eventTitle .block .btnBlock button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 0;
+  padding: 20px 10px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(7), html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock:nth-of-type(8) {
+  grid-column-start: span 2;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .eventBlock .infoContent .itemBlock .name {
+  margin-right: 30px;
+}
+html body .innerPage .center > div.midSide.eventApply .midBottom .content .searchBlock {
+  padding: 0;
+  margin-bottom: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .mailType button {
+  width: 125px;
+  height: 35px;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .mailType button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midPageList.midPageList ul {
+  width: auto;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midPageList.midPageList ul.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block label input {
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .read,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .delete {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .readAll,
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap div.block .btnWrap .editBtn {
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap label input.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .functionWrap .finished {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode.editState .allMail li .text {
+  max-width: 629px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label {
+  width: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select {
+  width: 8%;
+  height: auto;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all::before {
+  content: "";
+  width: 89%;
+  height: 88%;
+  display: block;
+  opacity: 0;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block label.select .all:checked::before {
+  opacity: 1;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button {
+  width: auto;
+  height: 30px;
+  padding: 0 15px 2px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.read, html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap .block .btnWrap button.delete {
+  display: none;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .functionWrap button.finished {
+  height: 30px;
+  padding: 0 15px;
+  display: none;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.text {
+  width: 100%;
+  max-width: 774px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date {
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li div.date::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: unset;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select {
+  width: 20%;
+  height: auto;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all {
+  width: 18px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all::before {
+  content: "";
+  width: 89%;
+  height: 88%;
+  opacity: 0;
+  border-radius: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .outerMode .allMail li label.select .all:checked::before {
+  opacity: 1;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode {
+  width: 100%;
+  height: auto;
+  display: none;
+  padding: 30px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .titleM i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 20px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i {
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .prevNext_Wrap i:first-child {
+  margin-right: 100px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .dateWrap {
+  width: 100%;
+  height: auto;
+  padding-bottom: 15px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.mailWrap .midBottom .content .innerMode .innerMode_Content p:last-child {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay {
+  height: 35px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li.payWay:last-child {
+  margin: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midTop .objectList .payType li .pay_Icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form {
+  width: 45%;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form label .itemName {
+  min-width: 81px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom form .submitBtn {
+  width: 305px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished.display {
+  display: block;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished .deposit_State {
+  margin: 25px 0 20px 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form {
+  width: 60%;
+  margin-bottom: 170px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .itemName {
+  width: 40px;
+  min-width: unset;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label input {
+  width: 185px;
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label .remind {
+  left: 65px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button {
+  width: 95px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form label button:last-child {
+  margin-right: 0;
+}
+html body .innerPage .center > div.midSide.deposit .midBottom .deposit_finished form .submitBtn {
+  width: 285px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList {
+  padding: 20px 20px;
+  position: relative;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap {
+  width: 96%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum .text {
+  margin-right: 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList .cardWrap .cardNum span {
+  margin: 0 5px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  opacity: 0.5;
+  pointer-events: none;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  opacity: 1;
+  pointer-events: visible;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.fa-chevron-left {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList i.fa-chevron-right {
+  margin-left: 20px;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul {
+  width: 100%;
+  max-width: 794px;
+  overflow: hidden;
+  padding: 0;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 7px 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .innerPage .center > div.midSide.bankCard .midTop .objectList ul .cardSet li {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+  margin-right: 15px;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form {
+  width: 45%;
+}
+html body .innerPage .center > div.midSide.bankCard .midBottom form .submitBtn {
+  width: 288px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop {
+  margin-bottom: 0;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox {
+  width: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .accountWrap .typeBox .typeName span {
+  padding: 3px 8px 4px;
+  margin-left: 215px;
+  cursor: pointer;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer {
+  padding: 20px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer .titleS span {
+  margin-left: 10px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half {
+  width: auto;
+  height: auto;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label .itemName {
+  margin-right: 20px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label select,
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half label input {
+  width: 256px;
+  height: 40px;
+  padding: 0 15px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box {
+  width: 255px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5px 1fr 5px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 0 30px 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form .half .submitBtn {
+  width: 255px;
+  height: 40px;
+  margin: 0 0 0 101px;
+}
+html body .innerPage .center > div.midSide.transfer .midTop .platTransfer form i.fa-right-long {
+  width: 27px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li {
+  width: 24%;
+  height: auto;
+  min-height: 115px;
+  padding: 15px 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content .limited li p {
+  margin-bottom: 10px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form {
+  width: 41%;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .content form .remind {
+  line-height: 16px;
+  bottom: -35px;
+}
+html body .innerPage .center > div.midSide.withdraw .midBottom .remindBox {
+  width: 100%;
+  margin-top: 30px;
+  position: relative;
+  bottom: unset;
+  left: unset;
+  -webkit-transform: unset;
+          transform: unset;
+}
+html body .gamePage_Wrap {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center {
+  width: 1400px;
+  height: auto;
+  margin: 0 auto;
+}
+html body .gamePage_Wrap .center .containerWrap {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0 20px;
+}
+html body .gamePage_Wrap .center .containerWrap .mainImg {
+  width: 675px;
+  height: 732px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox {
+  height: auto;
+  padding-top: 148px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p {
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .title p.small {
+  margin-left: 16px;
+  padding-bottom: 5px;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .mainCnt {
+  width: 630px;
+  margin: 50px 0;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox {
+  width: 630px;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li {
   width: auto;
   height: auto;
   cursor: pointer;
 }
-html body main aside.downloadBtn {
-  width: 47px;
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img {
+  width: 189px;
+  height: 185px;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:hover, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img:active, html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li img.active {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+html body .gamePage_Wrap .center .containerWrap .textBox .btnBox li p {
+  padding-top: 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav ul li::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 9px 10px 9px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search {
+  width: 330px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 10px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .nav .search input {
+  width: 100%;
+  height: 100%;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li {
+  width: 100%;
+  height: auto;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr 15px 1fr 15px 1fr 15px 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li {
+  width: 248px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:hover .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li:active .btnBox, html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li.active .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li img {
+  width: 100%;
+  height: 165px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: #000000;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox {
+  width: 100%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox p {
+  max-width: 175px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .textBox i {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox {
+  width: 100%;
+  height: 165px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button {
+  width: 140px;
+  height: 40px;
+}
+html body .gamePage_Wrap .center .gameInnerPage_Wrap .gameBox li ul li .btnBox button:first-child {
+  margin-bottom: 15px;
+}
+html body .gamePage_Wrap .center .marqueeWrap {
+  width: 100%;
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff));
-  background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+html body .eventWrap {
+  width: 100%;
+  height: auto;
+}
+html body .eventWrap .eventTitle {
+  width: 100%;
+  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1426,150 +4057,272 @@ html body main aside.downloadBtn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: fixed;
-  top: 250px;
-  left: 12px;
-  z-index: 99;
 }
-html body main aside.downloadBtn i {
-  width: 25px;
-  height: 25px;
+html body .eventWrap .eventBody {
+  width: 1400px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px auto 0;
+  padding: 0 0 50px;
 }
-html body main aside.mobileDownloadBtn {
-  width: 55px;
-  height: 155px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #a9986f), color-stop(50%, #d2bd8c), to(#ffefca));
-  background: linear-gradient(to top, #a9986f 15%, #d2bd8c 50%, #ffefca 100%);
-  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
-          clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+html body .eventWrap .eventBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 15px;
+}
+html body .eventWrap .eventBody .sideNav ul {
+  width: 100%;
+  height: 100%;
+}
+html body .eventWrap .eventBody .sideNav ul li {
+  width: 100%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
-  top: 290px;
-  left: 0px;
-  z-index: 99;
+  padding: 0 25px;
+  position: relative;
+  cursor: pointer;
 }
-html body main aside.mobileDownloadBtn p {
-  font-size: 20px;
-  font-weight: bold;
-}
-html body main aside.toTop {
-  width: 55px;
-  height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+html body .eventWrap .eventBody .sideNav ul li:before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: transparent;
   position: absolute;
-  right: 0;
-  top: 1300px;
-  z-index: 99;
-}
-html body main aside.toTop i {
-  width: 24px;
-  height: 22px;
-}
-html body main aside.decorateLeft {
-  width: 60px;
-  height: 597px;
-  position: absolute;
-  top: 480px;
+  top: 50%;
   left: 0;
-  z-index: -1;
-  pointer-events: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
-html body main aside.serviceTwoFour {
-  width: 55px;
-  height: 64px;
+html body .eventWrap .eventBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .eventWrap .eventBody .eventList {
+  width: 1025px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+html body .eventWrap .eventBody .eventList .eventBox:last-child {
+  margin-bottom: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul {
+  width: 100%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 280px;
-  right: 0px;
-  z-index: 99;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 25px;
 }
-html body main aside.serviceTwoFour i {
-  width: 34px;
-  height: 34px;
-}
-html body main aside.serviceLine {
-  width: 55px;
-  height: 64px;
+html body .eventWrap .eventBody .eventList .eventBox ul li {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 330px;
-  right: 30px;
-  z-index: 99;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-html body main aside.serviceLine i {
-  width: 33px;
-  height: 31px;
+html body .eventWrap .eventBody .eventList .eventBox ul li.title {
+  max-width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-html body main aside.serviceWeChat {
-  width: 55px;
-  height: 64px;
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox {
+  width: 28%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .eventWrap .eventBody .eventList .eventBox ul li.btnBox button:last-child {
+  margin-left: 10px;
+}
+html body .helpWrap {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody {
+  width: 1400px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0 50px;
+}
+html body .helpWrap .helpBody .sideNav {
+  width: 360px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul {
+  width: 100%;
+  height: auto;
+}
+html body .helpWrap .helpBody .sideNav ul li {
+  width: 100%;
+  height: auto;
+  position: relative;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .sideNav ul li.active .topic i:last-child {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+html body .helpWrap .helpBody .sideNav ul li.active ul.display {
+  display: block;
+}
+html body .helpWrap .helpBody .sideNav ul li .topic {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 380px;
-  right: 0px;
-  z-index: 99;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
 }
-html body main aside.serviceWeChat i {
-  width: 39px;
-  height: 32px;
+html body .helpWrap .helpBody .sideNav ul li .topic i:first-child {
+  margin-right: 20px;
 }
-html body main aside.serviceNone {
-  width: 55px;
-  height: 64px;
+html body .helpWrap .helpBody .sideNav ul li .topic i:last-child {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
   position: absolute;
-  top: 330px;
-  right: 0px;
-  z-index: 99;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html body .helpWrap .helpBody .sideNav ul li i {
+  margin-right: 30px;
+}
+html body .helpWrap .helpBody .sideNav ul li ul {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .sideNav ul li ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+  cursor: pointer;
+}
+html body .helpWrap .helpBody .container {
+  width: 1010px;
+  height: auto;
+  padding: 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .helpWrap .helpBody .container > div {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+html body .helpWrap .helpBody .container > div.display {
+  display: block;
+}
+html body .helpWrap .helpBody .container > div h2 {
+  margin: 55px 0 35px;
+}
+html body .helpWrap .helpBody .container > div h2:nth-of-type(1) {
+  margin-top: 0;
+}
+html body .helpWrap .helpBody .container > div p {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.remind.mar {
+  margin-top: 75px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn {
+  margin-bottom: 23px;
+}
+html body .helpWrap .helpBody .container > div p.haveBtn button {
+  margin-left: 20px;
+}
+html body .helpWrap .helpBody .container > div .img {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+html body .helpWrap .helpBody .container > div button {
+  width: 215px;
+  height: 40px;
 }
 html body footer {
   width: 100%;
   height: auto;
 }
-html body footer .upperHalf {
+html body footer > .top {
   width: 100%;
   height: 55px;
 }
-html body footer .upperHalf .upperHalfCenter {
+html body footer > .top .center {
   width: 1400px;
   height: 100%;
   display: -webkit-box;
@@ -1580,8 +4333,7 @@ html body footer .upperHalf .upperHalfCenter {
           justify-content: space-between;
   margin: 0 auto;
 }
-html body footer .upperHalf .upperHalfCenter ul {
-  width: auto;
+html body footer > .top .center ul {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1590,7 +4342,7 @@ html body footer .upperHalf .upperHalfCenter ul {
       -ms-flex-align: center;
           align-items: center;
 }
-html body footer .upperHalf .upperHalfCenter ul li {
+html body footer > .top .center ul li {
   width: 95px;
   height: 100%;
   display: -webkit-box;
@@ -1598,44 +4350,44 @@ html body footer .upperHalf .upperHalfCenter ul li {
   display: flex;
   margin: 0 10px 0 0;
 }
-html body footer .upperHalf .upperHalfCenter ul li a {
+html body footer > .top .center ul li a {
+  color: #310054;
   width: 100%;
   height: 100%;
   font-size: 17px;
   font-weight: bold;
-  color: #310054;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-html body footer .upperHalf .upperHalfCenter ul li:hover, html body footer .upperHalf .upperHalfCenter ul li:active, html body footer .upperHalf .upperHalfCenter ul li.active {
+html body footer > .top .center ul li:hover, html body footer > .top .center ul li:active, html body footer > .top .center ul li.active {
   background: -webkit-gradient(linear, left top, left bottom, from(#350051), color-stop(45%, #3f0075), to(#4a0089));
   background: linear-gradient(to bottom, #350051 0%, #3f0075 45%, #4a0089 100%);
-  height: 45px;
   -webkit-clip-path: polygon(85% 0, 100% 49%, 85% 99%, 15% 98%, 0 50%, 15% 0);
           clip-path: polygon(85% 0, 100% 49%, 85% 99%, 15% 98%, 0 50%, 15% 0);
+  height: 45px;
 }
-html body footer .upperHalf .upperHalfCenter ul li:hover a, html body footer .upperHalf .upperHalfCenter ul li:active a, html body footer .upperHalf .upperHalfCenter ul li.active a {
+html body footer > .top .center ul li:hover a, html body footer > .top .center ul li:active a, html body footer > .top .center ul li.active a {
   color: #ffffa4;
   font-weight: normal;
 }
-html body footer .upperHalf .upperHalfCenter ul p {
+html body footer > .top .center ul p {
   color: #310054;
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 2px;
 }
-html body footer .lowerHalf {
+html body footer > .bottom {
   width: 100%;
   height: 160px;
 }
-html body footer .lowerHalf .lowerHalfCenter {
+html body footer > .bottom .center {
   width: 1400px;
   height: 100%;
   display: -webkit-box;
@@ -1653,7 +4405,7 @@ html body footer .lowerHalf .lowerHalfCenter {
           justify-content: center;
   margin: 0 auto;
 }
-html body footer .lowerHalf .lowerHalfCenter p {
+html body footer > .bottom .center p {
   width: auto;
   height: auto;
   font-size: 12px;
@@ -1661,7 +4413,7 @@ html body footer .lowerHalf .lowerHalfCenter p {
   color: #310054;
   margin: 0 0 20px 0;
 }
-html body footer .lowerHalf .lowerHalfCenter p:last-child {
+html body footer > .bottom .center p:last-child {
   margin: 0;
 }
 html body .filter {
@@ -1692,10 +4444,10 @@ html body .filter .popup.display {
   display: block;
 }
 html body .filter .popup .title {
-  width: 100%;
-  height: 50px;
   background: -webkit-gradient(linear, left top, right top, from(#293d2d), color-stop(50%), to(#356b40));
   background: linear-gradient(to right, #293d2d 0%, 50%, #356b40 100%);
+  width: 100%;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1780,7 +4532,7 @@ html body .filter .popup.news .menu li {
 }
 html body .filter .popup.news .menu li p {
   display: inline;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -1839,16 +4591,662 @@ html body .filter .popup.news .content li p.date {
   color: #dedede;
   font-size: 14px;
 }
+html body aside {
+  width: auto;
+  height: auto;
+}
+html body aside .download {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#ffffff));
+  background: linear-gradient(to bottom, #dddddd 0%, #ffffff 100%);
+  width: 47px;
+  height: 50px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 610px;
+  left: 12px;
+  z-index: 99;
+  cursor: pointer;
+}
+html body aside .download i {
+  width: 25px;
+  height: 25px;
+}
+html body aside .moblile {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(15%, #a9986f), color-stop(50%, #d2bd8c), to(#ffefca));
+  background: linear-gradient(to top, #a9986f 15%, #d2bd8c 50%, #ffefca 100%);
+  width: 55px;
+  height: 155px;
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 650px;
+  left: 0px;
+  z-index: 99;
+  cursor: pointer;
+}
+html body aside .moblile p {
+  font-size: 20px;
+  font-weight: bold;
+}
+html body aside .decorateLeft {
+  width: 60px;
+  height: 597px;
+  position: absolute;
+  top: 500px;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+html body aside .serviceTwoFour {
+  width: 55px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 580px;
+  right: 0px;
+  z-index: 99;
+}
+html body aside .serviceTwoFour i {
+  width: 34px;
+  height: 34px;
+}
+html body aside .serviceLine {
+  width: 55px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 630px;
+  right: 30px;
+  z-index: 99;
+}
+html body aside .serviceLine i {
+  width: 33px;
+  height: 31px;
+}
+html body aside .serviceWeChat {
+  width: 55px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 680px;
+  right: 0px;
+  z-index: 99;
+}
+html body aside .serviceWeChat i {
+  width: 39px;
+  height: 32px;
+}
+html body aside .serviceNone {
+  width: 55px;
+  height: 64px;
+  position: absolute;
+  top: 630px;
+  right: 0px;
+  z-index: 99;
+}
+html body aside .toTop {
+  width: 55px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 1300px;
+  z-index: 99;
+  cursor: pointer;
+}
+html body aside .toTop i {
+  width: 24px;
+  height: 22px;
+}
+html body .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  display: none;
+  min-width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow.fgPW .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.fgPW .content input {
+  text-align: center;
+}
+html body .filter .jumpWindow.plsLogin .content {
+  height: 80px;
+}
+html body .filter .jumpWindow.news .content ul {
+  width: 840px;
+  height: 300px;
+  overflow-y: overlay;
+  padding: 15px;
+}
+html body .filter .jumpWindow.news .content ul ol {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.news .content ul ol.display {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li {
+  width: 100%;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html body .filter .jumpWindow.news .content ul li.typeList {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button {
+  width: auto;
+  height: 100%;
+  position: relative;
+  padding: 0 40px;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button:hover::after, html body .filter .jumpWindow.news .content ul li.typeList button:active::after, html body .filter .jumpWindow.news .content ul li.typeList button.active::after {
+  display: block;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+html body .filter .jumpWindow.news .content ul li.typeList button::after {
+  display: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+}
+html body .filter .jumpWindow.news .content ul li .text {
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html body .filter .jumpWindow.quickTransfer {
+  width: 480px;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content {
+  padding: 40px 40px 15px 40px;
+}
+html body .filter .jumpWindow.quickTransfer .content form {
+  width: 100%;
+  height: auto;
+}
+html body .filter .jumpWindow.quickTransfer .content form label {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 30px 70%;
+  grid-template-columns: 25% 70%;
+  gap: 10px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label i {
+  width: 100%;
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 8px 1fr 8px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  padding: 5px 0;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .transferBtn_Box button {
+  width: 100%;
+  height: 30px;
+}
+html body .filter .jumpWindow.quickTransfer .content form label .checkBtn {
+  width: 100%;
+  height: 40px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+html body .filter .jumpWindow.quickTransfer .btnBox {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.reminder .content, html body .filter .jumpWindow.applied .content {
+  padding: 24px 80px 35px;
+}
+html body .filter .jumpWindow.reminder .content p, html body .filter .jumpWindow.applied .content p {
+  text-align: center;
+}
+html body .filter .jumpWindow.changePhone .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePhone .content .text {
+  width: 280px;
+  margin-bottom: 20px;
+}
+html body .filter .jumpWindow.changePhone .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePhone .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePhone .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.changePhone .content label button {
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html body .filter .jumpWindow.changePW .content {
+  padding: 20px 0;
+}
+html body .filter .jumpWindow.changePW .content label {
+  width: 280px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+}
+html body .filter .jumpWindow.changePW .content label:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow.changePW .content label input {
+  padding: 0 15px;
+}
+html body .filter .jumpWindow.dealDetail {
+  width: 840px;
+}
+html body .filter .jumpWindow.dealDetail .content {
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.dealDetail .content .serialNum span {
+  margin-left: 10px;
+}
+html body .filter .jumpWindow.dealDetail .content table tr th,
+html body .filter .jumpWindow.dealDetail .content table tr td {
+  width: auto;
+}
+html body .filter .jumpWindow.pointDetail {
+  width: 480px;
+}
+html body .filter .jumpWindow.pointDetail .content {
+  max-height: 281px;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table {
+  width: 100%;
+  padding-top: 40px;
+  margin: 0;
+  position: relative;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr:first-child {
+  position: absolute;
+  top: 0;
+}
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr th,
+html body .filter .jumpWindow.pointDetail .content .scrollOuter table tr td {
+  width: 50%;
+}
+html body .filter .jumpWindow.eventWindow {
+  width: 1000px;
+  height: auto;
+}
+html body .filter .jumpWindow.eventWindow .content {
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+}
+html body .filter .jumpWindow.eventWindow .content img {
+  width: 100%;
+  height: 240px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule {
+  width: 100%;
+  height: 260px;
+  margin: 20px 0 0;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+html body .filter .jumpWindow.eventWindow .content .eventRule .overflowBlock p:last-child {
+  margin-bottom: 0;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html body .filter .jumpWindow .title i {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+html body .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html body .filter .jumpWindow .content input {
+  width: 280px;
+  height: 42px;
+}
+html body .filter .jumpWindow .content table {
+  margin-top: 20px;
+}
+html body .filter .jumpWindow .btnBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+html body .filter .jumpWindow .btnBox button {
+  display: block;
+  width: 280px;
+  height: 42px;
+  margin: 0 auto;
+}
+html body .filter .jumpWindow .btnBox .remind {
+  margin-top: 20px;
+}
+html body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html body::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+html body::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+html body .input {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f7d6a5), to(#ffdbb8));
+  background: linear-gradient(to top, #f7d6a5 0%, #ffdbb8 100%);
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 3px;
+  border-width: 1px 1px 1px 1px;
+  width: 195px;
+  height: 30px;
+  margin: 0 5px;
+  padding: 0 30px 0 30px;
+}
+html body .input.account {
+  border-width: 1px 1px 1px 0;
+}
+html body .input.password {
+  border-width: 1px 0 1px 1px;
+}
+html body .input::-webkit-input-placeholder {
+  font-size: 15px;
+  color: #730072;
+  font-weight: bold;
+  text-align: center;
+}
+html body .input::-moz-placeholder {
+  font-size: 15px;
+  color: #730072;
+  font-weight: bold;
+  text-align: center;
+}
+html body .input:-ms-input-placeholder {
+  font-size: 15px;
+  color: #730072;
+  font-weight: bold;
+  text-align: center;
+}
+html body .input::-ms-input-placeholder {
+  font-size: 15px;
+  color: #730072;
+  font-weight: bold;
+  text-align: center;
+}
+html body .input::placeholder {
+  font-size: 15px;
+  color: #730072;
+  font-weight: bold;
+  text-align: center;
+}
+html body .btn {
+  width: auto;
+  height: auto;
+}
+html body .btn.primary {
+  color: #730072;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe9c8), to(#efc79f));
+  background: linear-gradient(to bottom, #ffe9c8 0%, #efc79f 100%);
+}
+html body .btn.primary::before {
+  background: url("../img/border_trig_2.png") no-repeat;
+  background-size: contain;
+  content: "";
+  width: 19px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: -19px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .btn.primary::after {
+  background: url("../img/border_trig_2.png") no-repeat;
+  background-size: contain;
+  content: "";
+  width: 19px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  right: -19px;
+}
+html body .btn.second {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#440076), to(#310054));
+  background: linear-gradient(to bottom, #440076 0%, #310054 100%);
+}
+html body .btn.second::before {
+  background: url("../img/border_trig_3.png") no-repeat;
+  background-size: contain;
+  content: "";
+  width: 19px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  left: -19px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+html body .btn.second::after {
+  background: url("../img/border_trig_3.png") no-repeat;
+  background-size: contain;
+  content: "";
+  width: 19px;
+  height: 31px;
+  position: absolute;
+  top: 0;
+  right: -19px;
+}
+html body .btn.third {
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9e0000), color-stop(45%, #970000), to(#be0000));
+  background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+}
 html body .bg {
   width: 100%;
   height: 100%;
-  min-height: 1674px;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -9;
 }
-html body .money_ic_1 {
+html body .decorate .money_ic_1 {
   width: 114px;
   height: 69px;
   position: absolute;
@@ -1904,7 +5302,7 @@ html body .money_ic_1 {
             transform: scale(1);
   }
 }
-html body .money_ic_2 {
+html body .decorate .money_ic_2 {
   width: 90px;
   height: 62px;
   position: absolute;
@@ -1938,7 +5336,7 @@ html body .money_ic_2 {
             transform: scale(1);
   }
 }
-html body .money_ic_3 {
+html body .decorate .money_ic_3 {
   width: 133px;
   height: 160px;
   position: absolute;
@@ -1972,7 +5370,7 @@ html body .money_ic_3 {
             transform: translateX(0%) translateY(0%) scale(1);
   }
 }
-html body .money_ic_4 {
+html body .decorate .money_ic_4 {
   width: 58px;
   height: 53px;
   position: absolute;

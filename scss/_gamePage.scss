@@ -1,0 +1,263 @@
+//gamePage_Wrap
+.gamePage_Wrap {
+    width: 100%;
+    height: auto;
+    
+    .center {
+        width: 1400px;
+        height: auto;
+        margin: 0 auto;
+
+        //遊戲頁
+        .containerWrap {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 70px 0 20px;
+
+            .mainImg {
+                width: 675px;
+                height: 732px;
+                object-fit: contain;
+                flex-shrink: 0;
+                background: #000000; //待移除
+            }
+
+            .textBox {
+                height: auto;
+                padding-top: 148px;
+
+                .title {
+                    display: flex;
+                    align-items: flex-end;
+                    background-clip: text;
+
+                    p {
+                        white-space: nowrap;
+
+                        &.small {
+                            margin-left: 16px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+
+                .mainCnt {
+                    width: 630px;
+                    margin: 50px 0;
+                }
+
+                .btnBox {
+                    width: 630px;
+                    height: auto;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 15px;
+                    align-items: center;
+
+                    li {
+                        width: auto;
+                        height: auto;
+                        cursor: pointer;
+
+                        
+                        img {
+                            width: 189px;
+                            height: 185px;
+                            margin: 0 auto;
+                            object-fit: cover;
+                            object-position: top;
+
+                            &:hover,&:active,&.active {
+                                object-position: bottom;
+                            }
+                        }
+
+                        p {
+                            padding-top: 10px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        //遊戲內頁
+        .gameInnerPage_Wrap {
+            width: 100%;
+            height: auto;
+            padding: 0 20px;
+            margin-bottom: 40px;
+
+            .nav {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                ul {
+                    width: auto;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    li {
+                        width: auto;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0 50px;
+                        position: relative;
+                        cursor: pointer;
+
+                        &::before {
+                            content: "";
+                            width: 100%;
+                            height: 4px;
+                            background: transparent;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+
+                        &::after {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-color: transparent;
+                            border-width: 0 9px 10px 9px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+
+                .search {
+                    width: 330px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px 0 10px;
+
+                    i {
+                        width: 20px;
+                        height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-shrink: 0;
+                        margin-right: 5px;
+                        cursor: pointer;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .gameBox {
+                width: 100%;
+                height: auto;
+                padding: 20px;
+
+                li {
+                    width: 100%;
+                    height: auto;
+
+                    ul {
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        gap: 15px;
+
+                        li {
+                            width: 248px;
+                            height: 200px;
+                            overflow: hidden;
+                            position: relative;
+                            cursor: pointer;
+
+                            &:hover,&:active,&.active {
+
+                                .btnBox {
+                                    display: flex;
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                height: 165px;
+                                object-fit: cover;
+                                background: #000000; //待移除
+                            }
+
+                            .textBox {
+                                width: 100%;
+                                height: 35px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding: 0 15px;
+
+                                p {
+                                    max-width: 175px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+
+                                i {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .btnBox {
+                                width: 100%;
+                                height: 165px;
+                                display: none;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+
+                                button {
+                                    width: 140px;
+                                    height: 40px;
+
+                                    &:first-child {
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //跑馬燈
+        .marqueeWrap {
+            width: 100%;
+            height: 50px;
+            // @include marqueeStyle;
+        }
+    }
+}

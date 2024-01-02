@@ -1,0 +1,2069 @@
+.innerPage {
+
+    .marqueeWrap {
+        width: 1400px;
+        height: 50px;
+        // @include marqueeStyle;
+    }
+    
+    .center {
+        width: 1400px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 40px;
+        margin: 0 auto;
+
+        &>div {
+            height: auto;
+
+            //左欄
+            &.leftSide {
+                width: 17%;
+                flex-shrink: 0;
+                margin-right: 15px;
+
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px 0 0 0;
+
+                    p {
+                        text-align: center;
+                        user-select: none;
+
+                        &.userAccount {
+
+                            .level {
+                                padding: 2px 8px;
+                                margin-left: 5px;
+                            }
+                        }
+
+                        &.joinDay {
+                            margin-top: 10px;
+                        }
+                    }
+
+                    .quickSelect {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 15px 25px;
+
+                        li {
+                            width: 32%;
+                            height: auto;
+
+                            .quickBtn {
+                                width: 42px;
+                                height: 42px;
+                                margin: 0 auto;
+                                transition: all 0.4s;
+                                cursor: pointer;
+
+                                a {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+
+                            .btnName {
+                                text-align: center;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+
+                    .innerNav {
+                        width: 100%;
+                        height: auto;
+
+                        li {
+                            width: 100%;
+                            height: 50px;
+                            display: block;
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                background: transparent;
+                                padding: 0 25px;
+                                position: relative;
+
+                                &::before {
+                                    content: "";
+                                    width: 4px;
+                                    height: 100%;
+                                    background: transparent;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+
+                                i {
+                                    width: 20px;
+                                    height: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //右欄
+            &.rightSide {
+                width: 17%;
+                flex-shrink: 0;
+                margin-left: 15px;
+
+                .containerBox {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .listTitle {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 15px 20px;
+    
+                        .more {
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+    
+                            i {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+    
+                    .recordList {
+                        width: 100%;
+                        height: 305px;
+                        overflow: auto;
+                        position: relative;
+    
+                        .noData {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+    
+                        .contain {
+                            width: 100%;
+                            height: auto;
+                            overflow-y: overlay;
+                            
+                            li {
+                                width: 83%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 15px 0;
+                                margin: 0 auto;
+    
+                                &.betHistory {
+                                    width: 100%;
+                                    padding: 10px 20px;
+                                    margin: 0;
+                                }
+
+                                &.eventBlock {
+                                    border-bottom: none;
+
+                                    img {
+                                        width: 100%;
+                                        height: 60px;
+                                        object-fit: cover;
+                                    }
+
+                                    .eventInfo {
+                                        margin-top: 10px;
+                                    }
+                                }
+    
+                                .state {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    flex-shrink: 0;
+                                }
+    
+                                .detail {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    margin-top: 10px;
+    
+                                    i {
+                                        margin: 0 10px;
+                                    }
+                                }
+    
+                                .winLose {
+                                    width: 100%;
+                                    height: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-top: 10px;
+    
+                                    .half {
+                                        width: 50%;
+                                        height: auto;
+    
+                                        span {
+                                            display: block;
+                                            margin-bottom: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            //中欄
+            &.midSide {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .innerPageTitle { //內頁標題
+                    width: 100%;
+                    height: 47px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+
+                    .btn {
+                        width: auto;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 0 10px;
+                        cursor: pointer;
+
+                        p {
+                            font-size: 14px;
+                            margin: 2px 0 2px 5px;
+                        }
+
+                        i {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                //上部
+                .midTop {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 15px;
+
+                    .objectList {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 15px;
+
+                        i {
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &.fa-chevron-left,
+                            &.fa-chevron-right {
+                                cursor: pointer;
+                            }
+                        }
+
+                        ul {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            padding: 0 25px;
+                            position: relative;
+                           
+                            li {
+                                width: auto;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 0 15px;
+                            }
+                        }
+                    }
+
+                    .accountWrap {  //中心錢包公用
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+
+                        .typeBox {
+                            width: 20%;
+                            height: auto;
+
+                            &:nth-of-type(2) {
+
+                                .typeName {
+                                    justify-content: space-between;
+
+                                    span {
+                                        width: auto;
+                                        height: auto;
+                                        padding: 3px 8px 4px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                            .typeName {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                margin-bottom: 20px;
+
+                                i {
+                                    margin-left: 10px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .platformWallet { //遊戲平台公用
+                        width: 100%;
+                        height: auto;
+                        padding: 20px;
+                        
+                        .titleS {
+                            width: 100%;
+                            height: auto;
+                            margin-bottom: 20px;
+                        }
+
+                        .platformOuter {
+                            width: 100%;
+                            height: 110px;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: 15px;
+                            overflow: hidden;
+
+                            &.active {
+                                height: auto;
+                            }
+
+                            .platformBox {
+                                width: 100%;
+                                height: 100px;
+                                padding: 15px;
+
+                                .num {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
+
+                        .stateWrap {
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+
+                            i {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    form {  
+
+                        label {
+                            margin-bottom: 20px;
+                            position: relative;
+                        }
+                        
+                        //input select arrow
+                        i {
+
+                            &.fa-caret-down {
+                                position: absolute;
+                                top: 50%;
+                                right: 15px;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+
+                //中分頁
+                .midPageList {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0 0 20px;
+
+                    li {
+                        width: 110px;
+                        height: 35px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 10px;
+                        cursor: pointer;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                //下部
+                .midBottom {
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    position: relative;
+
+                    .content {
+                        display: none;
+                        width: 100%;
+                        height: 100%;
+
+                        &.display {
+                            display: block;
+                        }
+                    }
+
+                    .innerPageTitle {
+                        border-bottom: none;
+                        padding: 0;
+                    }
+
+                    .titleM {  //頁面標題
+                        margin: 0 0 20px 0;
+                    }
+
+                    .titleS {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                    }
+
+                    label { 
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 30px;
+                        position: relative;
+
+                        .itemName {
+                            margin-right: 25px;
+                            flex-shrink: 0;
+                        }
+
+                        select,
+                        input {
+                            width: 100%;
+                            height: 40px;
+                            padding: 0 15px;
+                        }
+                    }
+
+                    form {  //表單
+                        width: 100%;
+                        height: auto;
+
+                        &.searchBlock {  //表單搜尋列
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: 345px 355px 405px;
+                            padding-bottom: 20px;
+                            margin-bottom: 30px;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 103.7%;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+
+                            label {
+                                width: 345px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+
+                                &:nth-of-type(1) {
+                                    grid-column-start: span 4;
+                                }
+                            }
+
+                            .selectBtn_Wrap {
+                                width: auto;
+                                height: 40px;
+                                display: flex;
+                                margin: 0 30px;
+                                
+                                button {
+                                    width: 70px;
+                                    height: 100%;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            .searchBtn {
+                                width: 35%;
+                                height: 40px;
+                                justify-self: flex-end;
+                            }
+                        }
+
+                        label {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 30px;
+                            position: relative;
+
+                            .itemName {
+                                margin-right: 25px;
+                                flex-shrink: 0;
+                            }
+
+                            select,
+                            input {
+                                width: 100%;
+                                height: 40px;
+                                padding: 0 15px;
+
+                                &.inputStyle_2 {
+                                    padding: 0;
+                                }
+                            }
+
+                            .remind {
+                                position: absolute;
+                                bottom: -16px;
+                                left: 105px;
+                            }
+
+                            i {
+                                width: 13px;
+                                height: 13px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                position: absolute;
+                                top: 45%;
+                                right: 18px;
+                                transform: translateY(-50%);
+                            }
+                        }
+
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            &.submitBtn {
+                                margin: 55px 0 0 105px;
+                            }
+                        }
+                    }
+
+                    .remindBox { //注意事項欄
+                        width: 95%;
+                        height: auto;
+                        padding: 15px 20px;
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+
+                        p {
+                            font-size: 13px;
+                            line-height: 25px;
+
+                            &.remindTitle {
+                                line-height: unset;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        
+                    }
+
+                    table {
+                        width: 100%;
+                        height: auto;
+
+                        tr {
+
+                            th {
+                                width: auto;
+                                height: 25px;
+                            }
+
+                            td {
+                                width: auto;
+                                height: 50px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+
+                //會員中心 - 個人資料
+                &.memberCenter {
+
+                    .midTop {
+
+                        .memberData_state {
+                            display: unset;
+
+                            .info {
+                                padding: 0 0 0 20px;
+                            }
+
+                            ul {
+                                padding: 0 20px;
+                                margin: 10px 0 0 0;
+
+                                li {
+                                    padding: 0;
+                                    margin-right: 30px;
+
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+
+                                    i {
+                                        width: 30px;
+                                        height: 30px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin-right: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .midBottom {
+
+                        .titleM {
+
+                            &:not(:first-child) {
+                                margin: 20px 0 ;
+                            }
+                        }
+
+                        form {
+                            display: flex;
+                            justify-content: space-between;
+                            position: relative;
+
+                            &::before {
+                                content: "";
+                                width: 104.8%;
+                                height: 1px;
+                                position: absolute;
+                                bottom: 0;
+                                left: -20px;
+                            }
+
+                            .half {
+                                width: 46%;
+
+                                .submitBtn {
+                                    width: 288px;
+                                    margin: 40px 0 0 105px;
+                                }
+
+                                &>.remind {
+                                    margin: 20px 0;
+                                    position: unset;
+
+                                    span {
+                                        margin: 0 5px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 30px;
+
+                            &.changePassWord {
+
+                                input {
+                                    width: 196px;
+                                }
+
+                                button {
+                                    width: 70px;
+                                    flex-shrink: 0;
+                                }
+                            }
+                            
+                            button {
+                                width: auto;
+                                padding: 5px;
+                                margin-left: 20px;
+                            }
+
+                            .btnInput {
+                                width: 286px;
+                                height: 40px;
+                                display: flex;
+                                align-items: center;
+                                padding: 3px 3px 3px 15px;
+
+                                input {
+                                    width: 100%;
+                                }
+
+                                button {
+                                    width: 70px;
+                                    height: 100%;
+                                    flex-shrink: 0;
+                                }
+                            }
+                        }
+
+                        table {
+
+                            tr {
+
+                                th {
+                                    width: calc(100% / 6);
+                                }
+
+                                td {
+                                    height: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //邀請會員
+                &.invite {
+
+                    .midBottom {
+                        padding: 0 20px 20px 20px;
+                    
+                        .innerPageTitle {
+                            height: 60px;
+                            padding: 0;
+                        }
+
+                        .inviteWrap {
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 0 290px;
+
+                            label {
+                                width: 100%;
+
+                                &.qrCode {
+                                    grid-row-start: span 2;
+
+                                    img {
+                                        width: 90px;
+                                        height: 90px;
+                                        margin-left: 100px;
+                                    }
+                                }
+
+                                .itemName {
+                                    width: 55px;
+                                    margin-right: 20px;
+                                    flex-shrink: 0;
+                                }
+
+                                .inputStyle_2 {
+                                    padding: 0;
+                                }
+
+                                button {
+                                    width: auto;
+                                    white-space: nowrap;
+                                    padding: 8px 5px;
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .inviteImg {
+                            width: 100%;
+                            height: 652px;
+                            object-fit: contain;
+                        }
+
+                        .infoBlock {
+                            width: 100%;
+                            height: auto;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+                //VIP會員
+                &.vip {
+
+                    .midBottom {
+
+                        .content {
+
+                            .innerPageTitle {
+                                height: auto;
+                                justify-content: unset;
+                                border: none;
+                            }
+    
+                            .bar {
+                                width: 100%;
+                                height: 13px;
+                                display: flex;
+                                align-items: center;
+                                overflow: hidden;
+                                margin: 0 0 30px;
+    
+                                span {
+                                    width: 8%;
+                                    height: 100%;
+                                    display: inline-block;
+                                }
+                            }
+    
+                            ul {
+                                width: 100%;
+                                height: auto;
+    
+                                &.level {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 30px 0 10px;
+                                }
+    
+                                &.toNext {
+                                    width: 50%;
+                                    
+                                    li {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        margin-bottom: 15px;
+    
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+    
+                                        &.deposit_Num {
+    
+                                            .bar {
+    
+                                                span {
+                                                    width: 20%;
+                                                }
+                                            }
+                                        }
+    
+                                        &.levelWater_Num {
+                                            
+                                            .bar {
+    
+                                                span {
+                                                    width: 30%;
+                                                }
+                                            }
+                                        }
+    
+                                        .bar {
+                                            width: 100%;
+                                            height: 8px;
+                                            margin: 0 10px;
+                                        }
+                                    }
+                                }
+    
+                                li {
+                                    width: auto;
+                                    height: auto;
+                                }
+                            }
+    
+                            .levelWelfare {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+                                padding: 15px 0;
+                                margin: 30px 0 0;
+                                position: relative;
+    
+                                &::before {
+                                    content: "";
+                                    width: 103.7%;
+                                    height: 1px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+    
+                                ul {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    margin: 30px 0 50px;
+    
+                                    li {
+                                        width: 100%;
+                                        height: auto;
+                                        padding: 10px 0;
+    
+                                        .validNum {
+                                            margin-top: 10px;
+                                        }
+                                    }
+                                }
+    
+                                button {
+    
+                                    &.more {
+                                        width: 30%;
+                                        height: 40px;
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+
+                            .titleM {
+                                
+                                i {
+                                    margin-right: 5px;
+                                    cursor: pointer;
+                                }
+                            }
+
+                            .vipCardList {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                padding: 20px 0;
+        
+                                i {
+                                    filter: grayscale(1);
+                                    opacity: 0.5;
+                                    pointer-events: none;
+    
+                                    &.active {
+                                        filter: grayscale(0);
+                                        opacity: 1;
+                                        pointer-events: visible;
+                                        cursor: pointer;
+                                    }
+    
+                                    &.fa-chevron-left {
+                                        margin-right: 20px;
+                                    }
+    
+                                    &.fa-chevron-right {
+                                        margin-left: 20px;
+                                    }
+                                }
+                                
+                                ul {
+                                    width: 100%;
+                                    max-width: 1075px;
+                                    height: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    overflow: hidden;
+                                    position: relative;
+
+                                    ol {
+                                        width: auto;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        transition: transform 0.3s;
+
+                                        li {
+                                            width: 280px;
+                                            height: 150px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            flex-shrink: 0;
+                                            justify-content: space-between;
+                                            border-radius: 10px;
+                                            padding: 15px;
+                                            margin-right: 10px;
+                                            overflow: hidden;
+
+                                            .medal {
+                                                width: 60px;
+                                                height: 70px;
+                                            }
+
+                                            .vipDetail {
+                                                width: 100%;
+                                                height: auto;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                                padding: 0 20px;
+                                                margin-top: 10px;
+
+                                                p {
+
+                                                    span {
+                                                        display: block;
+                                                        margin-top: 10px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            table {
+                                margin-bottom: 50px;
+
+                                &.promotion {
+
+                                    tr {
+
+                                        th,
+                                        td {
+                                            width: 25%;
+                                        }
+                                    }
+                                }
+
+                                &.return,
+                                &.discount {
+
+                                    tr {
+
+                                        th,
+                                        td {
+                                            width: calc(100% / 6);
+                                        }
+                                    }
+                                }
+                            }
+
+                            .vipNotice {
+                                width: 100%;
+                                height: auto;
+
+                                .title {
+                                    margin-bottom: 20px;
+                                }
+
+                                .em {
+                                    margin-bottom: 20px;
+                                }
+
+                                ul {
+                                    width: 100%;
+                                    height: auto;
+                                    padding: 0 0 0 40px;
+
+                                    li {
+                                        width: 100%;
+                                        height: auto;
+                                        list-style: cjk-ideographic;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //我的錢包
+                &.wallet {
+
+                    .midTop {
+
+                        .walletWrap {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            justify-content: space-between;
+
+                            .typeBox {
+                                width: 50%;
+                                height: auto;
+                                padding: 20px;
+
+                                .typeName {
+                                    width: 100%;
+                                    height: auto;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    span {
+                                        padding: 4px 8px;
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .numTotal {
+                                    margin-top: 15px;
+                                }
+
+                                .withdrawLimit {
+                                    margin-top: 40px;
+
+                                    span {
+                                        margin-left: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .midBottom {
+
+                        .platformWallet {
+
+                            .platformOuter {
+                                width: 100%;
+                                height: auto;
+                                display: grid;
+                                grid-template-columns: repeat(5, 1fr);
+                                gap: 10px;
+                                margin-top: 20px;
+
+                                .platformBox {
+                                    width: 100%;
+                                    height: 100px;
+                                    padding: 15px 10px;
+
+                                    .num {
+                                        margin-top: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //交易紀錄
+                &.dealRecord {
+
+                    .midBottom {
+
+                        .content {
+                            
+                            .searchBlock {
+
+                                .searchBtn {
+                                    justify-self: flex-end;
+                                }
+                            }
+
+                            table {
+                                width: 100%;
+
+                                &.water {
+
+                                    tr {
+
+                                        th {
+                                            width: auto;
+                                            
+                                            &:nth-of-type(1),
+                                            &:nth-of-type(6) {
+                                                width: 20%;
+                                            }
+                                        }
+
+                                        td {
+                                            width: auto;
+                                            
+                                            &:nth-of-type(1),
+                                            &:nth-of-type(6) {
+                                                width: 20%;
+                                            }
+
+                                            p {
+                                                border: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                tr {
+
+                                    th {
+                                        width: calc(100% / 4);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //查詢紅利
+                &.pointRecord {
+
+                    .midBottom {
+                        padding: 0 20px 20px;
+
+                        .content {
+
+                            form {
+
+                                &.searchBlock {
+                                    grid-template-columns: 30% 30% 40%;
+                                    padding: 0;
+                                    margin-top: 10px;
+
+                                    label {
+                                        width: 100%;
+                                        grid-column-start: unset;
+
+                                        .itemName {
+                                            width: auto;
+                                        }
+                                    }
+                                }
+                            }
+
+                            table {
+
+                                tr {
+
+                                    th,
+                                    td {
+                                        width: 25%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //投注紀錄
+                &.betRecord {
+
+                    .midBottom {
+                        padding: 0;
+
+                        .content {
+
+                            .innerPageTitle {
+                                padding: 10px 20px 0;
+                            }
+
+                            form {
+
+                                &.searchBlock {
+                                    grid-template-columns: repeat(3, minmax(332px, 1fr));
+                                    gap: 20px;
+                                    padding: 20px 20px 30px;
+                                    margin-bottom: 20px;
+
+                                    &::before {
+                                        width: 100%;
+                                    }
+
+                                    label {
+                                        width: 100%;
+                                        grid-column-start: unset;
+                                        margin: 0;
+
+                                        &:nth-of-type(3) {
+                                            grid-column-start: 1 span ;
+                                        }
+
+                                        .itemName {
+                                            width: auto;
+                                        }
+                                    }
+                                    
+                                    .selectBtn_Wrap {
+                                        margin: 0;
+                                        align-items: center;
+
+                                        button {
+                                            flex-shrink: 0;
+                                        }
+
+                                        .hint {
+                                            margin-left: 10px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .recordList {
+                                width: 100%;
+                                height: auto;
+                                margin-bottom: 30px;
+                                   
+                                .titleWrap,
+                                .detailWrap {
+                                    width: 100%;
+                                    height: 40px;
+                                    display: flex;
+                                    align-items: center;
+
+                                    p {
+                                        text-align: center;
+
+                                        &:nth-of-type(1),
+                                        &:nth-of-type(2),
+                                        &:nth-of-type(3) {
+                                            width: 25%;
+                                        }
+
+                                        &:nth-of-type(4),
+                                        &:nth-of-type(5) {
+                                            width: 10%;
+                                        }
+
+                                        &:nth-of-type(6) {
+                                            width: 5%;
+                                        }
+                                    }
+
+                                    i {
+                                        margin: 0 auto;
+                                        cursor: pointer;
+                                    }
+                                }                               
+
+                                li {
+
+                                    &.active {
+
+                                        table {
+                                            display: table;
+                                        }
+                                    }
+
+                                    .detailWrap {
+                                        width: 97%;
+                                        margin: 0 auto;
+                                    }
+
+                                    table {
+                                        width: 97%;
+                                        height: auto;
+                                        display: none;
+                                        margin: 8px auto 20px;
+
+                                        tr {
+
+                                            th,
+                                            td {
+
+                                                &:nth-of-type(1) {
+                                                    width: 15%;
+                                                }
+                                                &:nth-of-type(2) {
+                                                    width: 10%;
+                                                }
+                                                &:nth-of-type(3) {
+                                                    width: 30%;
+                                                }
+                                                &:nth-of-type(4),
+                                                &:nth-of-type(5) {
+                                                    width: 10%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //優惠申請
+                &.eventApply {
+
+                    .midBottom {
+
+                        .content {
+
+                            .eventBlock {
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                flex-direction: column;
+
+                                &.unlock {
+                                    .eventTitle {
+                                        grid-template-columns: auto 14% 47.5% auto 14%;
+                                    }
+                                }
+
+                                &:not(:last-child) {
+                                    margin-bottom: 20px;
+                                }
+
+                                .eventTitle {
+                                    width: 100%;
+                                    height: 50px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+
+                                    padding: 0 10px;
+
+                                    .block {
+                                        width: auto;
+                                        height: auto;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        p {
+                                            &.type,
+                                            &.name {
+                                                margin-right: 15px;
+                                            }
+                                        }
+
+                                        .pointCount {
+                                            width: 100%;
+                                            height: auto;
+                                            white-space: nowrap;
+                                            margin-right: 10px;
+                                            
+                                            span {
+                                                margin: 0 5px;
+    
+                                                &:first-child {
+                                                    margin: 0 5px 0 15px;
+                                                }
+                                            }
+                                        }
+                                        
+                                        .btnBlock {
+                                            width: 100%;
+                                            height: auto;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+    
+                                            button {
+                                                width: 75px;
+                                                height: 30px;
+                                                margin-right: 10px;
+    
+                                                &:last-child {
+                                                    margin-right: 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .infoContent {
+                                    width: 100%;
+                                    height: auto;
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    gap: 30px 0;
+                                    padding: 20px 10px;
+
+                                    .itemBlock {
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+
+                                        &:nth-of-type(7),
+                                        &:nth-of-type(8) {
+                                            grid-column-start: span 2;
+                                        }
+
+                                        .name {
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            .searchBlock {
+                                padding: 0;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+
+                //站內信
+                &.mailWrap {
+
+                    .mailType {
+
+                        button {
+                            width: 125px;
+                            height: 35px;
+                            margin-right: 10px;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+
+                    .midPageList {
+
+                        &.midPageList  {
+
+                            ul {
+                                width: auto;
+                                height: auto;
+                                display: none;
+
+                                &.active {
+                                    display: flex;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .midBottom {
+                        padding: 0;
+
+                        .content {
+
+                            .outerMode {
+                                width: 100%;
+                                height: auto;
+                                display: none;
+
+                                &.display {
+                                    display: block;
+                                }
+
+                                &.editState {
+
+                                    .functionWrap {
+        
+                                        div {
+        
+                                            &.block {
+                                                justify-content: unset;
+
+                                                label {
+                                                    display: flex;
+                                                    margin: 0;
+
+                                                    input {
+                                                        padding: 0;
+                                                    }
+                                                }
+                                                
+                                                .btnWrap {
+
+                                                    .read,
+                                                    .delete {
+                                                        display: block;
+                                                    }
+
+                                                    .readAll,
+                                                    .editBtn {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        label {
+
+                                            input {
+                                                    
+                                                &.select {
+                                                    display: flex;
+                                                    justify-content: unset;
+                                                }
+                                            }
+                                        }
+                                        
+        
+                                        .finished {
+                                            display: block;
+                                        }
+                                    }
+
+                                    .allMail {
+    
+                                        li {
+
+                                            .select {
+                                                display: flex;
+                                            }
+
+                                            .text {
+                                                max-width: 629px;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .functionWrap {
+                                    width: 100%;
+                                    height: 65px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    padding: 0 20px;
+
+                                    .block {
+                                        width: 100%;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: flex-end;
+
+                                        label {
+                                            width: unset;
+
+                                            &.select {
+                                                width: 8%;
+                                                height: auto;
+                                                display: none;
+                                                align-items: center;
+                                                margin-right: 20px;
+    
+                                                .all {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    margin-right: 10px;
+                                                    position: relative;
+                                                    cursor: pointer;
+    
+                                                    &::before {
+                                                        content: "";
+                                                        width: 89%;
+                                                        height: 88%;
+                                                        display: block;
+                                                        opacity: 0;
+                                                        border-radius: 50px;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%,-50%);
+                                                    }
+
+                                                    &:checked {
+
+                                                        &::before {
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        .btnWrap {
+                                            display: flex;
+                                            align-items: center;
+
+                                            button {
+                                                width: auto;
+                                                height: 30px;
+                                                padding: 0 15px 2px;
+    
+                                                &.read,
+                                                &.delete {
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    button {
+
+                                        &.finished {
+                                            height: 30px;
+                                            padding: 0 15px;
+                                            display: none;
+                                            flex-shrink: 0;
+                                        }
+                                    }
+                                }
+
+                                .allMail {
+                                    width: 100%;
+                                    height: auto;
+
+                                    li {
+                                        width: 100%;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        padding: 0 20px;
+                                        cursor: pointer;
+
+                                        div {
+                                            width: auto;
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+
+                                            &.text {
+                                                width: 100%;
+                                                max-width: 774px;
+
+                                                p {
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                    white-space: nowrap;
+                                                    padding-right: 10px;
+                                                }
+                                            }
+
+                                            &.date {
+                                                width: 30%;
+                                                justify-content: center;
+                                                flex-shrink: 0;
+                                                position: relative;
+
+                                                &::before {
+                                                    content: "";
+                                                    width: 1px;
+                                                    height: 20px;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    left: 0;
+                                                    transform: translateY(-50%);
+                                                }
+                                            }
+                                        }
+
+                                        label {
+                                            width: auto;
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            margin: unset;
+
+                                            &.select {
+                                                width: 20%;
+                                                height: auto;
+                                                display: none;
+                                                align-items: center;
+                                                margin-right: 20px;
+    
+                                                .all {
+                                                    width: 18px;
+                                                    height: 18px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    padding: 0;
+                                                    margin-right: 10px;
+                                                    position: relative;
+                                                    cursor: pointer;
+    
+                                                    &::before {
+                                                        content: "";
+                                                        width: 89%;
+                                                        height: 88%;
+                                                        opacity: 0;
+                                                        border-radius: 50px;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%,-50%);
+                                                    }
+
+                                                    &:checked {
+
+                                                        &::before {
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .innerMode {
+                                width: 100%;
+                                height: auto;
+                                display: none;
+                                padding: 30px;
+
+                                &.display {
+                                    display: block;
+                                }
+
+                                .titleM {
+
+                                    i {
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .prevNext_Wrap {
+                                    width: 100%;
+                                    height: 30px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-end;
+                                    margin: 20px 0;
+
+                                    i {
+                                        cursor: pointer;
+
+                                        &:first-child {
+                                            margin-right: 100px;
+                                        }
+                                    }
+                                }
+
+                                .dateWrap {
+                                    width: 100%;
+                                    height: auto;
+                                    padding-bottom: 15px;
+                                }
+
+                                .innerMode_Content {
+                                    width: 100%;
+                                    height: auto;
+                                    padding: 10px 0; 
+                                    
+                                    p {
+                                        margin-bottom: 10px;
+
+                                        &:last-child {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                //存款
+                &.deposit {
+
+                    .midTop {
+
+                        .objectList {
+
+                            .payType {
+
+                                li {
+
+                                    &.payWay {
+                                        height: 35px;
+                                        margin-right: 10px;
+                                        cursor: pointer;
+    
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+                                    }
+    
+                                    .pay_Icon {
+                                        width: 30px;
+                                        height: 30px;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .midBottom {
+
+                        form {
+                            width: 45%;
+
+                            label {
+
+                                .itemName {
+                                    min-width: 81px;
+                                }
+                            }
+
+                            .submitBtn {
+                                width: 305px;
+                            }
+                        }
+
+                        .deposit_finished {
+                            width: 100%;
+                            height: auto;
+                            display: none;
+                            
+                            &.display {
+                                display: block;
+                            }
+
+                            .deposit_State {
+                                margin: 25px 0 20px 0;
+                            }
+
+                            form {
+                                width: 60%;
+                                margin-bottom: 170px;
+
+                                label {
+
+                                    .itemName {
+                                        width: 40px;
+                                        min-width: unset;
+                                    }
+
+                                    input {
+                                        width: 185px;
+                                        margin-right: 5px;
+                                    }
+
+                                    .remind {
+                                        left: 65px;
+                                    }
+
+                                    button {
+                                        width: 95px;
+                                        height: 35px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-shrink: 0;
+                                        margin-right: 10px;
+
+                                        &:last-child {
+                                            margin-right: 0;
+                                        }
+                                    }
+                                }
+
+                                .submitBtn {
+                                    width: 285px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //綁定銀行卡
+                &.bankCard {
+
+                    .midTop {
+
+                        .objectList {
+                            padding: 20px 20px;
+                            position: relative;
+
+                            .cardWrap {
+                                width: 96%;
+                                height: auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                position: absolute;
+                                top: 15px;
+                                left: 50%;
+                                transform: translateX(-50%);
+
+                                .cardNum {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .text {
+                                        margin-right: 5px;
+                                    }
+
+                                    span {
+                                        margin: 0 5px;
+                                    }
+                                }
+                            }
+
+                            i {
+                                filter: grayscale(1);
+                                opacity: 0.5;
+                                pointer-events: none;
+
+                                &.active {
+                                    filter: grayscale(0);
+                                    opacity: 1;
+                                    pointer-events: visible;
+                                }
+
+                                &.fa-chevron-left {
+                                    margin-right: 20px;
+                                }
+
+                                &.fa-chevron-right {
+                                    margin-left: 20px;
+                                }
+                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

@@ -1,7 +1,7 @@
 .filter {
     width: 100%;
     height: 100%;
-    background: $shadow_1;
+    background: #00000096;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,8 +13,8 @@
     }
 
     .popup {
-        background: $third_11;
-        border: solid 2px $second_1;
+        background: #343434;
+        border: solid 2px #f7d6a5;
         border-radius: 5px;
         position: absolute;
         top: 50%;
@@ -27,9 +27,9 @@
         }
 
         .title {
+            background: linear-gradient(to right, #293d2d 0%,  50%, #356b40 100%);
             width: 100%;
             height: 50px;
-            @include title;
             display: flex;
             align-items: center;
             position: relative;
@@ -37,7 +37,7 @@
             p {
                 width: 100%;
                 font-size: 20px;
-                color: $second_1;
+                color: #f7d6a5;
                 font-weight: bold;
                 letter-spacing: 2px;
                 text-align: center;
@@ -57,7 +57,7 @@
                     width: 25px;
                     height: auto;
                     border-style: solid;
-                    border-color: $second_1;
+                    border-color: #f7d6a5;
                     border-width: 3px 0 0 0;
                     position: absolute;
                     top: 50%;
@@ -71,7 +71,7 @@
                     width: 25px;
                     height: auto;
                     border-style: solid;
-                    border-color: $second_1;
+                    border-color: #f7d6a5;
                     border-width: 3px 0 0 0;
                     position: absolute;
                     top: 50%;
@@ -91,7 +91,7 @@
                 width: 96%;
                 height: auto;
                 display: flex;
-                border-bottom: solid 1px $third_12 ;
+                border-bottom: solid 1px #dedede83 ;
                 padding: 8px 0 0 0;
                 margin: 0 auto;
                 position: relative;
@@ -108,7 +108,7 @@
 
                     p {
                         display: inline;
-                        color: $main_3 ;
+                        color: #fff ;
                         font-size: 16px;
                         font-weight: bold;
                         letter-spacing: 2px;
@@ -117,14 +117,14 @@
                     &:hover,
                     &:active,
                     &.active {
-                        border-color: $third_10;
+                        border-color: #289952;
                     }
 
                     &::before {
                         content: "";
                         width: 2px;
                         height: 15px;
-                        background: $third_3;
+                        background: #dedede;
                         position: absolute;
                         top: 50%;
                         right: 0;
@@ -151,7 +151,7 @@
                     align-items: center;
                     justify-content: space-between;
                     padding: 0 5px;
-                    border-bottom: solid 1px $third_3;
+                    border-bottom: solid 1px #dedede;
 
                     p {
 
@@ -159,7 +159,7 @@
 
                         &.text {
                             min-width: 670px;
-                            color: $second_1 ;
+                            color: #f7d6a5 ;
                             font-size: 16px;
                             white-space: nowrap;
                             overflow: hidden;
@@ -167,7 +167,7 @@
                         }
 
                         &.date {
-                            color: $third_3 ;
+                            color: #dedede ;
                             font-size: 14px;
                         }
                     }

@@ -4,225 +4,253 @@ html {
 
     body {
         width: 100%;
-        height: 100%;
+        height: auto;
         position: relative;
-
+        @import "./_register.scss";
         @import "./header";
         @import "./main";
+        @import "./_innerPage.scss";
+        @import "./_gamePage.scss";
+        @import "./_event.scss";
+        @import "./_help.scss";
         @import "./footer";
         @import "./filter";
+        @import "./aside";
+        @import "./popup";
+
+        &::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #cccccc;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        .input {
+            background: linear-gradient(to top, #f7d6a5 0%, #ffdbb8 100%);
+            border-style: solid;
+            border-color: #fff;
+            border-radius: 3px;
+            border-width: 1px 1px 1px 1px;
+            width: 195px;
+            height: 30px;
+            margin: 0 5px;
+            padding: 0 30px 0 30px;
+
+            &.account {
+                border-width: 1px 1px 1px 0;
+            }
+
+            &.password {
+                border-width: 1px 0 1px 1px;
+            }
+
+            &::placeholder {
+                font-size: 15px;
+                color: #730072;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        .btn {
+            width: auto;
+            height: auto;
+
+            &.primary {
+                color: #730072;
+                background: linear-gradient(to bottom, #ffe9c8 0%, #efc79f 100%);
+
+                &::before {
+                    background: url("../img/border_trig_2.png") no-repeat;
+                    background-size: contain;
+                    content: "";
+                    width: 19px;
+                    height: 31px;
+                    position: absolute;
+                    top: 0;
+                    left: -19px;
+                    transform: scaleX(-1);
+                }
+
+                &::after {
+                    background: url("../img/border_trig_2.png") no-repeat;
+                    background-size: contain;
+                    content: "";
+                    width: 19px;
+                    height: 31px;
+                    position: absolute;
+                    top: 0;
+                    right: -19px;
+                }
+            }
+
+            &.second {
+                color: #fff;
+                background: linear-gradient(to bottom, #440076 0%, #310054 100%);
+
+                &::before {
+                    background: url("../img/border_trig_3.png") no-repeat;
+                    background-size: contain;
+                    content: "";
+                    width: 19px;
+                    height: 31px;
+                    position: absolute;
+                    top: 0;
+                    left: -19px;
+                    transform: scaleX(-1);
+                }
+
+                &::after {
+                    background: url("../img/border_trig_3.png") no-repeat;
+                    background-size: contain;
+                    content: "";
+                    width: 19px;
+                    height: 31px;
+                    position: absolute;
+                    top: 0;
+                    right: -19px;
+                }
+            }
+
+            &.third{
+                color: #fff;
+                background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+            }
+        }
 
         .bg {
             width: 100%;
             height: 100%;
-            min-height: 1674px;
             position: absolute;
             top: 0;
             left: 0;
             z-index: -9;
         }
 
-        .money_ic_1 {
-            width: 114px;
-            height: 69px;
-            position: absolute;
-            top: 160px;
-            left: 384px;
-            z-index: -1;
-            animation: moneyMove_1 2s linear infinite;
+        .decorate {
+            .money_ic_1 {
+                width: 114px;
+                height: 69px;
+                position: absolute;
+                top: 160px;
+                left: 384px;
+                z-index: -1;
+                animation: moneyMove_1 2s linear infinite;
 
-            @keyframes moneyMove_1 {
-                0% {
-                    opacity: 0;
-                }
+                @keyframes moneyMove_1 {
+                    0% {
+                        opacity: 0;
+                    }
 
-                25% {
-                    opacity: 0;
-                }
+                    25% {
+                        opacity: 0;
+                    }
 
-                50% {
-                    opacity: 0;
-                    transform: scale(0.9);
-                }
+                    50% {
+                        opacity: 0;
+                        transform: scale(0.9);
+                    }
 
-                75% {
+                    75% {
 
-                    opacity: 0.9;
-                    transform: scale(1);
-                }
+                        opacity: 0.9;
+                        transform: scale(1);
+                    }
 
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-        }
-
-        .money_ic_2 {
-            width: 90px;
-            height: 62px;
-            position: absolute;
-            top: 305px;
-            left: 364px;
-            z-index: -1;
-            animation: moneyMove_2 2s infinite;
-
-            @keyframes moneyMove_2 {
-                0% {
-                    opacity: 0;
-                    transform: scale(0.9);
-                }
-
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
+                    100% {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
                 }
             }
 
-        }
+            .money_ic_2 {
+                width: 90px;
+                height: 62px;
+                position: absolute;
+                top: 305px;
+                left: 364px;
+                z-index: -1;
+                animation: moneyMove_2 2s infinite;
 
-        .money_ic_3 {
-            width: 133px;
-            height: 160px;
-            position: absolute;
-            top: 345px;
-            right: 259px;
-            z-index: 1;
-            animation: moneyMove_3 2s linear 0.3s infinite;
+                @keyframes moneyMove_2 {
+                    0% {
+                        opacity: 0;
+                        transform: scale(0.9);
+                    }
 
-            @keyframes moneyMove_3 {
-                0% {
-                    opacity: 0;
-                    transform: translateX(-5%) translateY(-10%);
+                    100% {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
                 }
 
-                100% {
-                    opacity: 1;
-                    transform: translateX(0%) translateY(0%) scale(1);
+            }
+
+            .money_ic_3 {
+                width: 133px;
+                height: 160px;
+                position: absolute;
+                top: 345px;
+                right: 259px;
+                z-index: 1;
+                animation: moneyMove_3 2s linear 0.3s infinite;
+
+                @keyframes moneyMove_3 {
+                    0% {
+                        opacity: 0;
+                        transform: translateX(-5%) translateY(-10%);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0%) translateY(0%) scale(1);
+                    }
+                }
+            }
+
+            .money_ic_4 {
+                width: 58px;
+                height: 53px;
+                position: absolute;
+                top: 155px;
+                right: 259px;
+                z-index: 1;
+                animation: moneyMove_4 3s linear 0.2s infinite;
+
+                @keyframes moneyMove_4 {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    25% {
+                        opacity: 0;
+                    }
+
+                    50% {
+                        opacity: 0;
+                        transform: scaleX(0);
+                    }
+
+                    75% {
+                        opacity: 0.7;
+                        transform: scale(0.7);
+                    }
+
+                    100% {
+                        opacity: 1;
+                        transform: scale(1);
+                    }
                 }
             }
         }
-
-        .money_ic_4 {
-            width: 58px;
-            height: 53px;
-            position: absolute;
-            top: 155px;
-            right: 259px;
-            z-index: 1;
-            animation: moneyMove_4 3s linear 0.2s infinite;
-
-            @keyframes moneyMove_4 {
-                0% {
-                    opacity: 0;
-                }
-
-                25% {
-                    opacity: 0;
-                }
-
-                50% {
-                    opacity: 0;
-                    transform: scaleX(0);
-                }
-
-                75% {
-                    opacity: 0.7;
-                    transform: scale(0.7);
-                }
-
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
-        }
-
-        // .decorate_ic_1 {
-        //     width: 59px;
-        //     height: 31px;
-        //     position: absolute;
-        //     top: 186px;
-        //     left: 42px;
-        //     z-index: -1;
-        // }
-
-        // .thir_ic_1 {
-        //     width: 50px;
-        //     height: 42px;
-        //     background: $third_6 ;
-        //     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        //     transform: rotate(-10deg);
-        //     position: absolute;
-        //     top: 222px;
-        //     left: 152px;
-        //     z-index: -1;
-        //     animation: thir_ic_move_1 2s linear 0.4s;
-
-        //     @keyframes thir_ic_move_1 {
-        //         0% {
-        //             opacity: 0;
-        //             transform: scale(0.5);
-        //         }
-
-        //         40% {
-        //             opacity: 1;
-        //             transform: rotate(-30deg);
-        //         }
-
-        //         70% {
-        //             transform: rotate(-15deg);
-        //         }
-
-        //         100% {
-        //             transform: rotate(0deg);
-        //         }
-        //     }
-        // }
-
-        // .thir_ic_2 {
-        //     width: 34px;
-        //     height: 31px;
-        //     background: $third_7 ;
-        //     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        //     transform: rotate(-30deg);
-        //     position: absolute;
-        //     top: 522px;
-        //     right: 154px;
-        //     z-index: -1;
-        //     animation: thir_ic_move_2 2s linear 0.4s;
-
-        //     @keyframes thir_ic_move_2 {
-        //         0% {
-        //             opacity: 0;
-        //             transform: scale(0.5);
-        //         }
-
-        //         40% {
-        //             opacity: 1;
-        //             transform: rotate(-20deg);
-        //         }
-
-        //         70% {
-        //             transform: rotate(-10deg);
-        //         }
-
-        //         100% {
-        //             transform: rotate(-30deg);
-        //         }
-        //     }
-        // }
-
-        // .thir_ic_3 {
-        //     width: 23px;
-        //     height: 19px;
-        //     background: $third_6 ;
-        //     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        //     transform: rotate(-30deg);
-        //     position: absolute;
-        //     top: 500px;
-        //     left: 370px;
-        //     z-index: -1;
-        // }
     }
 }

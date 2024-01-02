@@ -3,7 +3,6 @@ main {
     height: auto;
     padding: 120px 0 50px 0;
 
-    // swiper
     .swiper-banner {
         width: 100%;
         position: relative;
@@ -43,7 +42,7 @@ main {
                 height: 15px;
                 border-style: solid;
                 border-width: 8px 8px 0 0;
-                border-color: $main_3 $main_3 transparent transparent;
+                border-color: #fff #fff transparent transparent;
                 position: absolute;
                 top: 50%;
                 left: 45%;
@@ -70,7 +69,7 @@ main {
             span {
                 width: 28px;
                 height: 24px;
-                background: $main_3;
+                background: #fff;
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                 transform: rotate(30deg);
                 border-radius: 0;
@@ -79,54 +78,32 @@ main {
                 &:hover,
                 &:active,
                 &.swiper-pagination-bullet-active {
-                    background: $third_1 ;
+                    background: #ffffa4;
                 }
             }
         }
     }
 
-    // marquee
-    .marqueeArea {
+    .marquee {
         width: 1300px;
         height: 40px;
-        background: $main_3;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         margin: 25px auto 65px;
         position: relative;
 
-        &::after {
-            content: "";
-            width: 50px;
-            height: 40px;
-            background: $main_3;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-            position: absolute;
-            top: 0;
-            right: -14px;
-            z-index: -1;
-        }
 
-        .marqueeBlock {
-            width: 52px;
-            height: 41px;
-            background: $third_2;
-            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-        }
-
-        .marqueeBroadcast {
+        .title {
+            background: #fff;
             width: 50px;
             height: 41px;
-            background: $main_3;
             clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            top: 0;
-            left: -12px;
-            z-index: 9;
             cursor: pointer;
+            margin-right: 5px;
 
             i {
                 width: 25px;
@@ -134,14 +111,18 @@ main {
             }
         }
 
-        .marqueeTextBox {
+        .textBox {
+            clip-path: polygon(99% 0%, 100% 50%, 99% 100%, 0% 100%, 1% 50%, 0% 0%);
+            background: #fff;
             width: 100%;
-            height: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
             overflow: hidden;
 
             p {
+                color: #310054;
                 font-size: 17px;
-                color: $second_2;
                 font-weight: bold;
                 display: inline-block;
                 white-space: nowrap;
@@ -161,8 +142,7 @@ main {
         }
     }
 
-    // gruid
-    .gruidArea {
+    .typeList {
         width: 1300px;
         height: auto;
         margin: 0 auto;
@@ -207,7 +187,7 @@ main {
 
                         P {
                             font-size: 35px;
-                            color: $third_5;
+                            color: #bf9057;
                             position: absolute;
                             top: 86px;
                             left: 15px;
@@ -491,13 +471,13 @@ main {
                 }
 
                 p {
+                    color: #f8dfad;
                     font-size: 35px;
                     font-weight: bold;
-                    color: $third_4;
                 }
             }
         }
     }
 
-    @import "./aside";
+
 }

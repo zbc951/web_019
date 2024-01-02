@@ -6,372 +6,309 @@ header {
     left: 0;
     z-index: 999;
 
-    .topArea {
+    .top {
         width: 100%;
         height: 40px;
         display: flex;
         justify-content: flex-end;
 
-        // 紫色區塊
-        .purpleArea {
+        .block {
+            background: linear-gradient(to left, #41004d 0%, #5c006a 45%, #730072 100%);
+            box-shadow: 0 0 2px 0 #00000096;
             width: 1300px;
             height: 100%;
-            background: $main_1;
-            box-shadow: 0 0 2px 0 $shadow_1;
             position: relative;
-            padding: 0 100px 0 0;
+            padding-right: 100px;
 
-            // 三角形邊框
             &::before {
+                border-color: transparent #730072;
                 content: "";
-                border-style: solid;
                 border-width: 21px 36px 24px 0px;
-                border-color: transparent $main_2 transparent transparent;
+                border-style: solid;
                 position: absolute;
                 top: -5px;
                 left: -36px;
             }
 
-            // 使用者介面區
             .userList {
                 width: 100%;
                 height: 100%;
                 display: flex;
+                align-items: center;
                 justify-content: flex-end;
 
-                li {
-                    width: auto;
-                    height: 100%;
+                label {
+                    position: relative;
+
+                    &.account {
+                        &::before {
+                            background: url("../img/border_trig.png") no-repeat;
+                            background-size: contain;
+                            content: "";
+                            width: 19px;
+                            height: 30px;
+                            position: absolute;
+                            top: 0;
+                            left: -13px;
+                        }
+                    }
+
+                    &.password {
+                        &::after {
+                            background: url("../img/border_trig.png") no-repeat;
+                            background-size: contain;
+                            content: "";
+                            width: 19px;
+                            height: 30px;
+                            position: absolute;
+                            top: 0;
+                            right: -13px;
+                            transform: scaleX(-1);
+                        }
+                    }
+                }
+
+                .btn {
+                    border-style: solid;
+                    border-width: 1px 0 1px;
+                    border-color: #fff;
+                    height: 31px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 0 5px;
+                    position: relative;
+                    margin-left: 50px;
+                }
+
+                .forget {
                     display: flex;
                     align-items: center;
-                    margin: 0 10px;
+                    margin: 0 40px;
 
-                    // 帳密表單
-                    form {
-                        width: auto;
+                    >svg {
+                        fill: #f7d6a5;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    p {
+                        color: #f7d6a5;
+                        flex-shrink: 0;
+                        font-size: 15px;
+                        text-decoration: underline;
+                        margin-left: 5px;
+                    }
+                }
+
+                .lang {
+                    border-width: 1px 0 1px;
+                    border-color: #fff;
+                    border-style: solid;
+                    background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
+                    width: 66px;
+                    height: 32px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+
+                    &.display {
+                        >ul {
+                            display: block;
+                        }
+                    }
+
+                    &::before,
+                    &::after {
+                        background: url("../img/border_trig_4.png") no-repeat center;
+                        background-size: contain;
+                        content: "";
+                        width: 21px;
+                        height: 31px;
+                        position: absolute;
+                        top: 0;
+                        left: -21px;
+                    }
+
+                    &::after {
+                        left: unset;
+                        right: -21px;
+                        transform: scaleX(-1);
+                    }
+
+                    p {
+                        color: #730072;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    i {
+                        border-color: #730072;
+                        border-style: solid;
+                        border-width: 0 2px 2px 0;
+                        width: 8px;
+                        height: 8px;
+                        position: absolute;
+                        top: 50%;
+                        right: -8px;
+                        transform: translateY(-50%) rotate(45deg);
+                        z-index: 1;
+                        pointer-events: none;
+                    }
+
+                    ul {
+                        border: solid 1px #fff;
+                        background: linear-gradient(to bottom, #f7d6a5 0%, #caa279 100%);
+                        width: 102px;
+                        position: absolute;
+                        top: 32px;
+                        left: 50%;
+                        padding: 5px 0;
+                        transform: translateX(-50%);
+                        display: none;
+
+                        li {
+                            padding: 5px 16px;
+
+                            &:hover,
+                            &:active,
+                            &.active {
+                                background: #caa279;
+
+                                p {
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+                .total {
+                    background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+                    border-color: #fff;
+                    border-width: 1px 0 1px;
+                    border-style: solid;
+                    width: 80px;
+                    height: 31px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    position: relative;
+                    cursor: pointer;
+                    margin-left: 20px;
+
+                    &.display {
+                        ul {
+                            display: block;
+                        }
+                    }
+
+                    >p {
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    &::after {
+                        border-color: #fff transparent;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                        pointer-events: none;
+                    }
+
+                    >ul {
+                        border-style: solid;
+                        border-color: #fff;
+                        border-width: 1px 0 1px;
+                        background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+                        width: 290px;
                         height: auto;
-                        display: flex;
+                        position: absolute;
+                        top: 31px;
+                        left: 0;
+                        padding: 5px 0;
+                        display: none;
 
-                        label {
-                            width: auto;
+                        li {
+                            width: 100%;
                             height: auto;
-                            position: relative;
-
-                            &.acc {
-                                &::before {
-                                    content: "";
-                                    width: 19px;
-                                    height: 30px;
-                                    background: url("../img/border_trig.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    left: -13px;
-                                }
-                            }
-
-                            &.pas {
-                                &::after {
-                                    content: "";
-                                    width: 19px;
-                                    height: 30px;
-                                    background: url("../img/border_trig.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    right: -13px;
-                                    transform: scaleX(-1);
-                                }
-                            }
-
-                            input {
-                                width: 195px;
-                                height: 30px;
-                                @include input_1;
-                                margin: 0 5px;
-                                padding: 0 30px 0 30px;
-
-                                &.account {
-                                    border-width: 1px 1px 1px 0;
-                                }
-
-                                &.password {
-                                    border-width: 1px 0 1px 1px;
-                                }
-
-                                &::placeholder {
-                                    font-size: 15px;
-                                    color: $main_2;
-                                    font-weight: bold;
-                                    text-align: center;
-                                }
-                            }
-                        }
-
-                        // 登入與註冊按鈕
-                        button {
-                            width: auto;
-                            height: 31px;
-                            border-style: solid;
-                            border-width: 1px 0 1px;
-                            border-color: $main_3;
-                            position: relative;
-                            padding: 0 5px;
-                            margin: 0 0 0 50px;
-
-                            // 登入按鈕
-                            &.loginBtn {
-                                @include loginBtn;
-
-                                p {
-                                    color: $main_2;
-                                }
-
-                                &::before {
-                                    content: "";
-                                    width: 19px;
-                                    height: 31px;
-                                    background: url("../img/border_trig_2.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    left: -19px;
-                                    transform: scaleX(-1);
-                                }
-
-                                &::after {
-                                    content: "";
-                                    width: 19px;
-                                    height: 31px;
-                                    background: url("../img/border_trig_2.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    right: -19px;
-                                }
-                            }
-
-                            // 註冊按鈕
-                            &.signupBtn {
-                                @include signupBtn;
-                                position: relative;
-
-                                p {
-                                    color: $main_3;
-                                }
-
-                                &::before {
-                                    content: "";
-                                    width: 19px;
-                                    height: 31px;
-                                    background: url("../img/border_trig_3.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    left: -19px;
-                                    transform: scaleX(-1);
-                                }
-
-                                &::after {
-                                    content: "";
-                                    width: 19px;
-                                    height: 31px;
-                                    background: url("../img/border_trig_3.png") no-repeat;
-                                    background-size: contain;
-                                    position: absolute;
-                                    top: 0;
-                                    right: -19px;
-                                }
-                            }
-
-                            p {
-                                font-size: 15px;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-
-                    // 忘記密碼
-                    &.forgetBtn {
-                        button {
-                            width: auto;
-                            height: auto;
-                            background: none;
+                            padding: 15px;
                             display: flex;
-                            margin: 0 0 0 10px;
-
-                            .questionIc {
-                                width: 20px;
-                                height: 20px;
-                                border-radius: 10px;
-                                border: solid 1px $second_1;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                margin: 0 5px 0 0;
-                            }
+                            align-items: center;
+                            justify-content: space-between;
 
                             p {
-                                font-size: 15px;
-                                color: $second_1;
-                                border-bottom: solid 1px $second_1;
-                            }
-                        }
-                    }
-
-                    // 語言切換
-                    &.languageBtn {
-
-                        label {
-                            width: auto;
-                            height: auto;
-                            margin: 0 0 0 20px;
-                            position: relative;
-
-                            &::before {
-                                content: "";
-                                width: 21px;
-                                height: 31px;
-                                background: url("../img/border_trig_4.png") no-repeat center;
-                                background-size: contain;
-                                position: absolute;
-                                top: 0;
-                                left: -21px;
-                            }
-
-                            &::after {
-                                content: "";
-                                width: 21px;
-                                height: 31px;
-                                background: url("../img/border_trig_4.png") no-repeat center;
-                                background-size: contain;
-                                position: absolute;
-                                top: 0;
-                                right: -21px;
-                                transform: scaleX(-1);
-                            }
-
-                            select {
-                                padding: 5px 0;
-                                @include languageStyle;
-                                position: relative;
-                                cursor: pointer;
-                            }
-
-                            i {
-                                width: 8px;
-                                height: 8px;
-                                border-style: solid;
-                                border-width: 0 0 2px 2px;
-                                border-color: $main_2;
-                                rotate: (-45deg);
-                                position: absolute;
-                                top: 40%;
-                                transform: translateY(-50%);
-                                right: -10px;
-                                z-index: 1;
-                                pointer-events: none;
-                            }
-                        }
-
-                        &.loginAfter {
-                            label {
-                                margin: 0;
-
-                                &::before {
-                                    display: none;
-                                }
-
-                                &::after {
-                                    display: none;
-                                }
-
-                                select {
-                                    @include loginAfterLanguageStyle;
-
-                                    option {
-                                        color: $second_3;
-                                    }
-
-                                }
-
-                                i {
-                                    border-color: $main_3;
-                                    top: 43%;
-                                    right: 0;
-                                }
-
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: bold;
+                                letter-spacing: 1px;
                             }
                         }
                     }
                 }
 
-                // 登入後
-                &.loginAfter {
-                    ol {
-                        width: auto;
-                        height: 100%;
-                        display: flex;
+                .userName {
+                    background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+                    border-color: #fff;
+                    border-width: 1px 0 1px;
+                    border-style: solid;
+                    height: 31px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 10px;
+                    position: relative;
+                    font-size: 15px;
+                    font-weight: bold;
 
-                        li {
-                            p {
-                                color: $third_9;
-                            }
+                    span {
+                        margin-right: 20px;
+                    }
+                }
 
-                            div {
-                                border: solid 1px $third_6;
-                                border-radius: 3px;
-                                background: $main_3 ;
-                                padding: 5px 5px;
+                &.loginBox {
+                    .btn {
+                        margin-left: 20px;
+                    }
+
+                    .lang {
+                        width: 100px;
+                        background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+                        margin-left: 20px;
+                        padding: 0 10px;
+
+                        ul {
+                            width: 100%;
+                            padding: 0;
+                            background: linear-gradient(to top, #9e0000 0%, #970000 45%, #be0000 100%);
+
+                            li {
+                                padding: 5px 10px;
 
                                 p {
-                                    font-size: 15px;
-                                    font-weight: bold;
+                                    color: #fff;
                                 }
                             }
+                        }
 
-                            &.userStatus {
-                                p {
-                                    font-size: 14px;
-                                    color: $third_4;
+                        >p {
+                            color: #fff;
+                        }
 
-                                    span {
-                                        color: $third_8;
-                                        margin: 0 5px;
-                                    }
-                                }
-                            }
+                        &::before,
+                        &::after {
+                            content: unset;
+                        }
 
-                            &.moneyStatus {
-                                div {
-                                    p {
-                                        color: $second_3;
-                                        display: flex;
-
-                                        i {
-                                            width: 8px;
-                                            height: 8px;
-                                            border-style: solid;
-                                            border-width: 0 2px 2px 0;
-                                            border-color: $second_3;
-                                            transform: translateY(3px) rotate(45deg);
-                                            margin: 0 0 0 8px;
-                                        }
-                                    }
-                                }
-                            }
-
-                            &.signoutBtn {
-                                div {
-                                    @include signoutBtn;
-
-                                    a {
-                                        p {
-                                            color: $main_3;
-                                        }
-                                    }
-                                }
-                            }
+                        i {
+                            right: 10px;
+                            border-color: #fff;
                         }
                     }
                 }
@@ -379,40 +316,36 @@ header {
         }
     }
 
-    .midArea {
+    .mid {
         width: 100%;
         height: 80px;
         position: relative;
         z-index: -1;
 
-        .centerArea {
+        .center {
             width: 1400px;
             height: 100%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
             margin: 0 auto;
             position: relative;
             z-index: 1;
 
             .logo {
-                width: auto;
-                height: auto;
+                width: 226px;
+                height: 40px;
 
                 img {
-                    width: 226px;
-                    height: 40px;
                     object-fit: contain;
                 }
             }
 
             .menu {
-                width: auto;
                 height: 100%;
                 display: flex;
 
                 li {
-                    width: auto;
                     height: 100%;
                     display: flex;
                     align-items: center;
@@ -420,10 +353,10 @@ header {
                     cursor: pointer;
 
                     .hexagon {
+                        background: linear-gradient(to bottom, #1e1e1e 0%, #393939 100%);
+                        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                         width: 95px;
                         height: 79px;
-                        @include hexagon;
-                        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
                         position: absolute;
                         top: 50%;
                         left: 50%;
@@ -431,10 +364,10 @@ header {
                         z-index: -1;
                         display: none;
 
-                        div {
+                        .line {
                             width: calc(100% - 25px);
                             height: 4px;
-                            background: $second_1;
+                            background: #f7d6a5;
                             position: absolute;
                             bottom: 2px;
                             left: 1px;
@@ -442,9 +375,9 @@ header {
                     }
 
                     a {
+                        color: #310054;
                         font-size: 18px;
                         letter-spacing: 1px;
-                        color: $second_2;
                         padding: 0 25px;
                     }
 
@@ -456,7 +389,7 @@ header {
                         }
 
                         a {
-                            color: $main_3 ;
+                            color: #fff;
                         }
                     }
                 }
@@ -464,17 +397,17 @@ header {
         }
     }
 
-    .bottomArea {
+    .bottom {
+        background: linear-gradient(top right, #1d1d1d 0%, #2a2a2a 100%);
         width: 100%;
         height: 226px;
-        @include bottomArea;
         display: none;
 
         &.display {
             display: block;
         }
 
-        .listArea {
+        .list {
             width: 100%;
             height: 100%;
             display: flex;
@@ -520,10 +453,10 @@ header {
                             }
 
                             p {
+                                color: #f7d6a5;
                                 font-size: 14px;
                                 font-weight: bold;
                                 text-align: center;
-                                color: $second_1;
                                 margin-top: 5px;
                             }
                         }
@@ -552,7 +485,7 @@ header {
                     height: 15px;
                     border-style: solid;
                     border-width: 4px 4px 0 0;
-                    border-color: $main_3;
+                    border-color: #fff;
                     position: absolute;
                     top: 50%;
                     left: 60%;

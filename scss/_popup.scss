@@ -1,0 +1,422 @@
+.filter {
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    &.display {
+        display: flex;
+    }
+
+    .jumpWindow {
+        display: none;
+        min-width: 480px;
+        height: auto;
+        overflow: hidden;
+
+        &.display {
+            display: block;
+        }
+
+        //忘記密碼
+        &.fgPW {
+
+            .content {
+                height: 80px;
+
+                input {
+                    text-align: center;
+                }
+            }
+        }
+
+        //請先登入
+        &.plsLogin {
+
+            .content {
+                height: 80px;
+            }
+        }
+
+        //最新消息
+        &.news {
+
+            .content {
+                
+                ul {
+                    width: 840px;
+                    height: 300px;
+                    overflow-y: overlay;
+                    padding: 15px;
+
+                    ol {
+                        display: none;
+                        width: 100%;
+                        height: auto;
+
+                        &.display {
+                            display: block;
+                        }
+                    }
+
+                    li {
+                        width: 100%;
+                        height: 45px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        &.typeList {
+                            justify-content: flex-start;
+
+                            button {
+                                width: auto;
+                                height: 100%;
+                                position: relative;
+                                padding: 0 40px;
+    
+                                &:hover,&:active,&.active {
+    
+                                    &::after {
+                                        display: block;
+                                    }
+                                }
+    
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 1px;
+                                    height: 16px;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    right: 0;
+                                }
+    
+                                &::after {
+                                    display: none;
+                                    content: "";
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 3px;
+                                    left: 0;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+
+                        .text {
+                            max-width: 80%;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        //快速轉帳
+        &.quickTransfer {
+            width: 480px;
+            height: auto;
+
+            .content {
+                padding: 40px 40px 15px 40px;
+
+                form {
+                    width: 100%;
+                    height: auto;
+
+                    label {
+                        width: 100%;
+                        height: auto;
+                        display: grid;
+                        grid-template-columns: 25% 70%;
+                        gap: 10px 30px;
+                        align-items: center;
+                        margin-bottom: 15px;
+
+                        input {
+                            padding: 0 15px;
+                        }
+
+
+                        i {
+                            width: 100%;
+                            text-align: center;
+                            grid-column-start: 2;
+                        }
+
+                        .transferBtn_Box {
+                            width: 100%;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            gap: 8px;
+                            grid-column-start: 2;
+                            padding: 5px 0;
+
+                            button {
+                                width: 100%;
+                                height: 30px;
+                            }
+                        }
+
+                        .checkBtn {
+                            width: 100%;
+                            height: 40px;
+                            grid-column-start: 2;
+                        }
+                    }
+                }
+            }
+
+            .btnBox {
+                padding: 20px 0;
+            }
+        }
+
+        //請先綁定資料 
+        &.reminder,
+        &.applied {
+
+            .content {
+                padding: 24px 80px 35px;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        //修改聯絡電話
+        &.changePhone {
+
+            .content {
+                padding: 20px 0;
+
+                .text {
+                    width: 280px;
+                    margin-bottom: 20px;
+                }
+
+                label {
+                    width: 280px;
+                    height: auto;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    input {
+                        padding: 0 15px;
+                    }
+
+                    button {
+                        padding: 5px;
+                        position: absolute;
+                        top: 50%;
+                        right: 5px;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+
+        //修改密碼
+        &.changePW {
+
+            .content {
+                padding: 20px 0;
+
+                label {
+                    width: 280px;
+                    height: auto;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    input {
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+
+        //注單明細
+        &.dealDetail {
+            width: 840px;
+            
+            .content {
+                padding: 20px;
+                align-items: unset;
+
+                .serialNum {
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+                table {
+
+                    tr {
+
+                        th,
+                        td {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        //注單明細
+        &.pointDetail {
+            width: 480px;
+            
+            .content {
+                max-height: 281px;
+                padding: 20px;
+                align-items: unset;
+
+                .scrollOuter {
+                    width: 100%;
+                    height: auto;
+                    overflow: auto;
+                    
+
+                    table {
+                        width: 100%;
+                        padding-top: 40px;
+                        margin: 0;
+                        position: relative;
+    
+                        tr {
+
+                            &:first-child {
+                                position: absolute;
+                                top: 0;
+                            }
+    
+                            th,
+                            td {
+                                width: 50%;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        //查看活動
+        &.eventWindow {
+            width: 1000px;
+            height: auto;
+
+            .content {
+                width: 100%;
+                padding: 20px;
+                align-items: unset;
+                justify-content: unset;
+
+                img {
+                    width: 100%;
+                    height: 240px;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                }
+
+                .eventRule {
+                    width: 100%;
+                    height: 260px;
+                    margin: 20px 0 0;
+
+                    .overflowBlock {
+                        width: 100%;
+                        height: 100%;
+                        overflow-y: auto;
+                        overscroll-behavior: none;
+
+                        p {
+                            margin-bottom: 10px;
+                            line-height: 22px;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        
+        .title {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            i {
+                position: absolute;
+                right: 15px;
+                cursor: pointer;
+            }
+        }
+
+        .content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            input {
+                width: 280px;
+                height: 42px;
+            }
+
+            table {
+                margin-top: 20px;
+            }
+        }
+
+        .btnBox {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+
+            button {
+                display: block;
+                width: 280px;
+                height: 42px;
+                margin: 0 auto;
+            }
+
+            .remind {
+                margin-top: 20px;
+            }
+        }
+    }
+}

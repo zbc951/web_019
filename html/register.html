@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="../img/NTLOGO_64x64.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Document</title>
+    <link class="colorSystem" rel="stylesheet" href="../css_purple/colorStyle.css">
+    <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="registerWrap">
+        <div class="signUpBlock">
+            <div class="decPic">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="signBlock">
+                <div class="title">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <p>註冊</p>
+                </div>
+                <form>
+                    <label>
+                        <input type="text" class="inputStyle_1" placeholder="請輸入帳號">
+                        <p class="remind">帳號須包含一個英文字母(大小寫皆可);最少六個字元</p>
+                    </label>
+                    <label>
+                        <input type="password" class="inputStyle_1" placeholder="請輸入密碼">
+                        <p class="remind">數字英文,及限定的特殊符號(@._$#%^&*+-)可使用</p>
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </label>
+                    <label>
+                        <input type="text" class="inputStyle_1" placeholder="密碼確認">
+                    </label>
+                    <label>
+                        <div class="inputStyle_1 outer">
+                            <input type="text" placeholder="手機">
+                            <button type="button" class="btnStyle_2">傳送驗證碼</button>
+                        </div>
+                    </label>
+                    <label>
+                        <input type="text" class="inputStyle_1" placeholder="手機驗證碼">
+                    </label>
+                    <label>
+                        <input type="text" class="inputStyle_1" placeholder="邀請碼">
+                        <p class="remind">如無推薦的代理可不填寫</p>
+                    </label>
+                    <div class="policy">
+                        <label>
+                            <input type="checkbox" class="inputStyle_1">
+                        </label>
+                        <p>已閱讀並同意<span>相關條款與隱私政策</span></p>
+                    </div>
+                    <button type="button" class="btnStyle_1 check" disabled>確認</button>
+                    <button type="button" class="btnStyle_1 enter"
+                        onclick="window.location.href='../index.html'">進去看看</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- 彈窗 -->
+    <div class="filter">
+        <!-- 最新公告 -->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>最新消息</p>
+                <!-- <i class="close_ic"></i> -->
+                <i class="fa-solid fa-xmark closeWindow"></i>
+            </div>
+            <div class="content">
+                <ul>
+                    <li class="typeList">
+                        <button class="hot active">熱門</button>
+                        <button class="normal">一般</button>
+                        <button class="deposit">存款</button>
+                    </li>
+                    <ol class="hotBox display">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                        <li>
+                            <p class="text">公告</p>
+                            <p class="date">2020-01-02</p>
+                        </li>
+                    </ol>
+                    <ol class="normalBox">
+                        <li>
+                            <p class="text">公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告公告</p>
+                            <p class="date">2020-01-01</p>
+                        </li>
+                    </ol>
+                    <ol class="depositBox"></ol>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+<script src="../js/script.js"></script>
+<script src="../js/javascript.js"></script>
+</html>
